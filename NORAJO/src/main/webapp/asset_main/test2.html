@@ -1,0 +1,147 @@
+<!DOCTYPEhtml>
+<html lang="ko">
+<head>
+<style type="text/css">
+  body, header, div, footer, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style-type: none;
+  }
+  
+  /* 폰트 */
+  body{
+    font: 14px 'Malgun Gothic','맑은고딕';
+    }
+  /*a 라인 지우기*/
+  a {
+    text-decoration: none;
+    color: #444;
+  }
+  
+  #wrap {
+    background: #cfc;
+  }
+  
+  /* clear both속성 가상으로 생성 */
+  .clear:after {
+    content:"";
+    display: block;
+    clear: both;
+  }
+  
+  header {
+    background: #AE0E36;
+  }
+  
+  header h1 {
+    float: left;
+    margin-right: 40px;
+  }
+  
+  header .gnb {
+    float: left;
+    padding-top: 10px;
+  }
+  
+  header .gnb li {
+    float: left;
+  }
+  header .gnb li a {
+    display: block;    
+    font-size: 16px;     
+    width: 100px;  
+    text-align: center;  
+  }
+  
+  .lnb {
+    float:left;
+    width: 20%;
+    background: lightgreen;
+  }
+  
+  .lnb li a {  
+    display: block;  
+    padding: 5px 20px;
+  }
+  
+  .content_area {
+    float: left;
+    width: 80%;
+    background: rgb(0, 128, 128);
+  }
+  
+  footer {
+    padding: 10px 10px 10px 10px;
+    background: lightgray;  
+  }
+  
+  footer p {
+    text-align: center;
+  }
+  
+</style>
+<meta charset="UTF-8">
+<title>Layout float</title>
+</head>
+<body>
+  <div id="wrap">
+    <!-- header -->
+    <header class="clear">
+      <h1><ahref="#">Logotype</a></h1>
+      <ul class="gnb">
+        <li>
+          <a href="#">menu1</a>
+        </li>
+        <li>
+          <a href="#">menu2</a>
+        </li>
+        <li>
+          <a href="#">menu3</a>
+        </li>
+        <li>
+          <a href="#">menu4</a>
+        </li>
+      </ul>
+    </header>
+    <!-- header -->
+    
+    <!-- container -->
+    <div id="container"class="clear">
+     <ul class="lnb">
+        <li>
+          <a href="#">s1</a>
+        </li>
+        <li>
+          <a href="#">s2</a>
+        </li>
+        <li>
+          <a href="#">s3</a>
+        </li>
+        <li>
+          <a href="#">s4</a>
+        </li>
+      </ul>
+      <div class="content_area">
+        <p>content<br/>
+           content<br/>
+           content<br/>
+           content<br/>
+           content<br/>
+           content<br/>
+           content<br/>
+           content<br/>
+        </p>
+      </div>
+  </div>
+    <!-- container -->
+  
+    <!-- footer -->
+    <footer>
+      <p> ©copyright All right reserved</p>
+    </footer>
+    <!-- footer -->
+  </div>
+</body>
+</html>

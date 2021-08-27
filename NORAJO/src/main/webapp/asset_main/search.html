@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<style type="text/css">
+
+
+
+
+	input{width: 300px; border-color: #FFC83E;}
+	
+	button{background-color: #FFC83E; width: 60px; margin-left:-100px;}
+	
+	.fa-search {color: white; padding-left: 0;}
+  .category {background-color: #FFC83E; color: white;}
+
+  
+</style>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="/NORAJO/css/bootstrap.min.css" rel="stylesheet">  
+<link href="/NORAJO/css/bootstrap-theme.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+
+<title>Searchbar</title>
+</head>
+<body>
+   <div>
+    <form>
+      <fieldset>
+			  <select class="category">      
+			    <option value="All">All</option>
+			    <option value="title">TITLE</option>
+			    <option value="director">DIRECTOR</option>
+			    <option value="actor">ACTOR</option>
+			  </select>
+			  
+        <input type="search" placeholder="Search"/>
+	        <button type="submit">
+           <i class="fas fa-search"></i> 
+	        </button>
+      </fieldset>
+    </form>
+   </div>
+   
+</body>
+</html>
+

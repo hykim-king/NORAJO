@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<style type="text/css">
+
+.search:focus-within::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 2px solid orange;
+  border-radius: 3px;
+}
+
+
+</style>
+<meta charset="UTF-8">
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+<title>Insert title here</title>
+</head>
+<body>
+  <body>
+		<div class="search">                            
+		  <select class="searchSelect">          
+		    <option value="All">All</option>
+		    <option value="arts-craft">Arts & Craft</option>
+		    <option value="automotive">automotive</option>
+		    <option value="baby">baby</option>
+		  </select>
+		  <input type="text" class="searchInput" />
+
+</div>
+</body>
+</html>
