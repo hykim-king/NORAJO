@@ -5,12 +5,7 @@ pageEncoding="UTF-8"%>
 <head>
 <!-- ===================================== CSS ===================================== -->
 <style type="text/css">
-  
-  *{margin: 0; padding: 0;}
-  
-  body{background-color: #FFA800;}
-    
-  .norajo_logo{padding: 5px 20px; position: absolute; left: 50%; top: 30%; margin: -150px 0 0 -120px;}
+
 
 	a {color: #333;text-decoration: none;}
 	
@@ -42,21 +37,21 @@ pageEncoding="UTF-8"%>
 	.inp_text input {display: block; width: 100%; height: 100%; font-size: 13px; color: #000; border: none;
 	                 outline: 0; -webkit-appearance: none; background-color: transparent;}
 	
-  .btn_login {margin: 20px 0 0; width: 100%; height: 48px; border-radius: 3px; font-size: 15px; 
-              background-color: #000; color: white;}
-
+	.btn_login {margin: 20px 0 0; width: 100%; height: 48px; border-radius: 3px; font-size: 16px; 
+	            color: #fff; background-color: #000;}
+	
 	.login_append {overflow: hidden; padding: 15px 0 0;}	
 	.login_append .inp_chk {float: left;}
 	
 	.inp_chk {display: inline-block; position: relative; margin-bottom: -1px;}
 	.inp_chk .inp_radio {position: absolute; z-index: -1; top: 0; left: 0; width: 18px; height: 18px; border: 0;}
-	.inp_chk .lab_g {display: inline-block; margin-right: 19px; color: #333333; font-size: 13px; 
+	.inp_chk .lab_g {display: inline-block; margin-right: 19px; color: #909090; font-size: 13px; 
 	                 line-height: 19px; vertical-align: top;}
 	.inp_chk .ico_check {display: inline-block; width: 18px;height: 18px; margin: 1px 4px 0 0; 
 	                     background-position: -60px 0; color: #333;}
 	.inp_chk .txt_lab {vertical-align: top;}
 	
-	.login_append .txt_find {float: right;}
+	.login_append .txt_find {float: right;color: #777;}
 
 </style>
 <!-- ===================================== CSS ===================================== -->
@@ -69,10 +64,6 @@ pageEncoding="UTF-8"%>
 <body>
 <div class="inner_login">
 <div class="login_norajo">
-
-<div class="norajo_logo">
-  <a href="https://google.com"><img src="${pageContext.request.contextPath}/resources/img/norajologo_white.png" width="200px"></a>
-</div>
 
 <form method="post" id="authForm" action="login_page_url">
 	<fieldset>
@@ -89,7 +80,7 @@ pageEncoding="UTF-8"%>
 			</div>
     </div>
     
-		<button type="submit" class="btn_login">LOGIN</button>
+		<button type="submit" class="btn_login">로그인</button>
 		<div class="login_append">
 			<div class="inp_chk">
 			  <!-- 체크시 checked 추가 -->
