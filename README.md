@@ -1,7 +1,7 @@
 # NORAJO
 ### MARK_DOWN_TEST  
 ![Content](https://github.com/hykim-king/NORAJO/blob/main/a.png "content")
-* 줄 맞추기, 폰트 크기, 페이지 출력시 가운데로 정렬
+* 줄 맞추기, 폰트 크기, 페이지 출력시 가운데로 정렬  
  (Con - Country / Gen - Genre / Pt - Playtime)  
    
    
