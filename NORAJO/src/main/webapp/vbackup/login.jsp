@@ -6,7 +6,6 @@ pageEncoding="UTF-8"%>
 <!-- ===================================== CSS ===================================== -->
 <style type="text/css">
   
-  .logo{padding-left: 10%;}
 
 	a {color: #333;text-decoration: none;}
 	
@@ -59,14 +58,14 @@ pageEncoding="UTF-8"%>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" type="image/x-icon" href="${pageContext.request.contextPath}/resources/img/favicon1.png">
+<link rel="icon" type="image/x-icon" href="${pageContext.request.contextPath}/resources/img/favicon.png">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
 </head>
 <body>
 <div class="inner_login">
 <div class="login_norajo">
 
-<img class="logo" src="${pageContext.request.contextPath}/resources/img/norajologo3.png" width="250" alt="LOGO">
+
 <form method="post" id="authForm" action="login_page_url">
 	<fieldset>
 	<legend class="screen_out">로그인 정보 입력폼</legend>

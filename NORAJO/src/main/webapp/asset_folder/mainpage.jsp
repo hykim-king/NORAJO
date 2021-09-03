@@ -28,58 +28,29 @@
 
   input:-ms-input-placeholder{color:#a8a8a8;}
   input::-webkit-input-placeholder{color: #a8a8a8;}
-  input::-moz-placeholder{color: #a8a8a8;}
+  input::-moz-placeholder{color: #a8a8a8;} 
   
 
-  i {color: #1B1B1B; font-size: 20px;}
+input {border: 1px solid transparent; background-color: #f1f1f1; padding: 10px; font-size: 16px;}
 
-input {
-  border: 1px solid transparent;
-  background-color: #f1f1f1;
-  padding: 10px;
-  font-size: 16px;
-}
+input[type=text] {background-color: #f1f1f1; width: 590px; border-radius: 4px 0 0 4px;}
 
-input[type=text] {
-  background-color: #f1f1f1;
-  width: 500px;
-}
+input[type=submit] {background-color: #FFA800; color: white; cursor: pointer; 
+                    width: 80px; height: 40px; float: right; border-radius: 0 4px 4px 0;}
 
-input[type=submit] {
-  background-color: DodgerBlue;
-  color: #fff;
-  cursor: pointer;
-}
+.autocomplete{padding: 19px 200px 0px 300px;}
 
-.autocomplete-items {
-  position: absolute;
-  border: 1px solid #d4d4d4;
-  border-bottom: none;
-  border-top: none;
-  z-index: 99;
-  /*position the autocomplete items to be the same width as the container:*/
-  top: 100%;
-  left: 0;
-  right: 0;
-}
+/*position the autocomplete items to be the same width as the container:*/
+.autocomplete-items {  position: absolute; border: 1px solid #d4d4d4; border-bottom: none; 
+                       border-top: none; z-index: 99; top: 100%; left: 0; right: 0;}
 
-.autocomplete-items div {
-  padding: 10px;
-  cursor: pointer;
-  background-color: #fff; 
-  border-bottom: 1px solid #d4d4d4; 
-}
+.autocomplete-items div {padding: 10px; cursor: pointer; background-color: #fff; border-bottom: 1px solid #d4d4d4;}
 
 /*when hovering an item:*/
-.autocomplete-items div:hover {
-  background-color: #e9e9e9; 
-}
+.autocomplete-items div:hover {background-color: #e9e9e9;}
 
 /*when navigating through the items using the arrow keys:*/
-.autocomplete-active {
-  background-color: DodgerBlue !important; 
-  color: #ffffff; 
-}
+.autocomplete-active {background-color: DodgerBlue !important; color: #ffffff;}
 
   
 /*────────────────────────────────────header────────────────────────────────────*/
@@ -103,7 +74,7 @@ input[type=submit] {
   .dropdown-menu:hover:not(.home) {background-color: #FFA800;color: white;}
   
   .home {font-size: 14px; cursor: pointer; width: 100px; text-align: center; width: 220px; margin: 0 40px;}
-  .home a {display: block; text-decoration: none;color: white; padding: 16px 16px;}
+  .home a {display: block; text-decoration: none; color: white; padding: 16px 16px;}
   .home a:hover {background-color: #FFA800}
   
   
@@ -122,8 +93,8 @@ input[type=submit] {
 
 /*────────────────────────────────────footer────────────────────────────────────*/
 
-  footer{height: 80px; background-color: #1B1B1B; border-top: 2px solid #232323; 
-         width: 100%; text-align: center; color: #B6B6B6; padding: 10px;}
+  footer{height: 100px; background-color: #1B1B1B; border-top: 2px solid #232323; 
+         width: 100%; text-align: center; color: #B6B6B6; position: absolute;}
   .footer-country{font-size: 3.0 rem; font-weight: bold;}
   .copy-text{font-size: 2px; padding: 8px;}
   
@@ -135,7 +106,7 @@ input[type=submit] {
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" type="image/x-icon" href="${pageContext.request.contextPath}/resources/img/favicon1.png">
+<link rel="icon" type="image/x-icon" href="${pageContext.request.contextPath}/resources/img/favicon.png">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
 <title>Norajo</title>
 </head>
@@ -152,18 +123,15 @@ input[type=submit] {
             <li><a href="https://google.com">Login</a></li>
           </ul>
          </nav>
-
-
-
-<form autocomplete = "off" action= "${pageContext.request.contextPath}/redirect">
          <div class= "autocomplete">
-           <input  id ="myInput" name = "id" class="form-search" type="text" placeholder="Search" >
-             <button class="btn_search" type="submit">
-               <i class="fas fa-search" aria-hidden="true"></i>
-             </button>
+           <form autocomplete = "off" action= "${pageContext.request.contextPath}/redirect">
+	           <input  id ="myInput" name = "id" class="form-search" type="text" placeholder="Search" >
+	             <input class="btn_search" type="submit">
+           </form>
          </div>
     </div>
-</form>
+
+
 <script>
 function autocomplete(inp, arr) {
   /*the autocomplete function takes two arguments,
