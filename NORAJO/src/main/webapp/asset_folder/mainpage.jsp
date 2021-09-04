@@ -325,8 +325,8 @@ autocomplete(document.getElementById("myInput"), champ);
      <a href="#">는 임시로 넣어둔 것, 언제든 다른것으로 바꾸기 가능.
 -->
 
-<div class="master_content_wrap"> 
-  <div class = "content_wrap"> 
+<div class="master_content_wrap">
+  <div class = "content_wrap">
       <!-- 포스터 -->  
       <div class="poster_item"><a href="#">Poster_img</a></div>
       <!-- 제목 -->  
