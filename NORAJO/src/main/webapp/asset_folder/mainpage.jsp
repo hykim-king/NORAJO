@@ -84,21 +84,14 @@ input[type=submit] {background-color: #FFA800; color: white; cursor: pointer;
 /*────────────────────────────────────content────────────────────────────────────*/
   
 .master_content_wrap{width: 585px; padding: 20 0 20 0px; margin: 0 auto;}
-
 .content_wrap{display: block; width: 600px; height: 600px; padding: 30 20 30 20px; 
               background-color: white; border: 1px solid black; margin: center;}
-
 .poster_item{display: block; border: 1px solid black; line-height: 300px;
              width: 260px; height: 310px; text-align: center; float: left;}
-
 .txt_title{width: 295px; float: right; font-size: 25px; font-weight: 600; padding: 0 5 0 5px; border-bottom: 2px solid black;}
-
 .info_detail{width: 295px; float: right; top: 10px; margin: 5 0 10 0px; padding: 0 5 0 5px; font-size: 12px;}
-
 .info_detail_item{width: 295px; float: right; top: 10px; padding: 10 5 10 5px; background: lightgray; }
-
 .movie_summary{width: 598px; float: left; font-size: 25px; font-weight: bold; margin: 25 0 15 0px; border-bottom: 2px solid black;}
-
 .movie_summary_item{width: 598px; height: 210px; float: left; font-size:1.15rem; font-weight: 30;}
                 
 /*────────────────────────────────────content────────────────────────────────────*/
@@ -327,20 +320,25 @@ autocomplete(document.getElementById("myInput"), champ);
 </c:forEach>    
 
 
+
+<!-- div틀은 유지할것 그렇지 않으면 라인이 망가짐 
+     <a href="#">는 임시로 넣어둔 것, 언제든 다른것으로 바꾸기 가능.
+-->
+
 <div class="master_content_wrap">
   <div class = "content_wrap">
       <!-- 포스터 -->  
-      <div class="poster_item">Poster_img</div>
+      <div class="poster_item"><a href="#">Poster_img</a></div>
       <!-- 제목 -->  
       <div class ="txt_title">TITLE</div>
       <!-- 국가 / 장르 / 런타임 -->   
       <div class="info_detail">Country │ Runtime</div>
       <!-- 감독 / 배우 / 평점 -->  
-      <div class="info_detail_item">Release Date : <br><br>
-                                    Director : <br><br>
-                                    Actor : <br><br>
-                                    Ratings :<br><br>
-                                    Genre : 
+      <div class="info_detail_item">Release Date : <a href="#"></a><br><br>
+                                    Director : <a href="#"></a><br><br>
+                                    Actor : <a href="#"></a><br><br>
+                                    Ratings : <a href="#"></a><br><br>
+                                    Genre : <a href="#"></a>
       </div>
       <!-- SUMMARY(고정) -->
       <div class="movie_summary">SUMMARY</div> 
