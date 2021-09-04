@@ -326,7 +326,7 @@ autocomplete(document.getElementById("myInput"), champ);
 -->
 
 <div class="master_content_wrap">
-  <div class = "content_wrap">
+  <div class = "content_wrap"> 
       <!-- 포스터 -->  
       <div class="poster_item"><a href="#">Poster_img</a></div>
       <!-- 제목 -->  
