@@ -83,18 +83,31 @@ input[type=submit] {background-color: #FFA800; color: white; cursor: pointer;
 
 /*────────────────────────────────────content────────────────────────────────────*/
   
-  /* contents의 내용이 들어갈 부분을 나타내기 위해 border로 상자 만들어둠
-  .content_wrapper{background-color: black; width: 1170px; margin: 0 auto; 
-                border-left: 1px solid white; border-right: 1px solid white;
-                border-top: 1px solid white; border-bottom: 1px solid white;} */
+.master_content_wrap{width: 585px; padding: 20 0 20 0px; margin: 0 auto;}
+
+.content_wrap{display: block; width: 600px; height: 600px; padding: 30 20 30 20px; 
+              background-color: white; border: 1px solid black; margin: center;}
+
+.poster_item{display: block; border: 1px solid black; line-height: 300px;
+             width: 260px; height: 310px; text-align: center; float: left;}
+
+.txt_title{width: 295px; float: right; font-size: 25px; font-weight: 600; padding: 0 5 0 5px; border-bottom: 2px solid black;}
+
+.info_detail{width: 295px; float: right; top: 10px; margin: 5 0 10 0px; padding: 0 5 0 5px; font-size: 12px;}
+
+.info_detail_item{width: 295px; float: right; top: 10px; padding: 10 5 10 5px; background: lightgray; }
+
+.movie_summary{width: 598px; float: left; font-size: 25px; font-weight: bold; margin: 25 0 15 0px; border-bottom: 2px solid black;}
+
+.movie_summary_item{width: 598px; height: 210px; float: left; font-size:1.15rem; font-weight: 30;}
                 
 /*────────────────────────────────────content────────────────────────────────────*/
 
 
 /*────────────────────────────────────footer────────────────────────────────────*/
 
-  footer{height: 100px; background-color: #1B1B1B; border-top: 2px solid #232323; 
-         width: 100%; text-align: center; color: #B6B6B6; position: absolute;}
+  .footer-wrap {position: absolute; left: 0; bottom: 0; width: 100%; padding: 15px 0; 
+              text-align: center; color: #B6B6B6; background: #1B1B1B; border-top: 2px solid #232323; }     
   .footer-country{font-size: 3.0 rem; font-weight: bold;}
   .copy-text{font-size: 2px; padding: 8px;}
   
@@ -125,8 +138,8 @@ input[type=submit] {background-color: #FFA800; color: white; cursor: pointer;
          </nav>
          <div class= "autocomplete">
            <form autocomplete = "off" action= "${pageContext.request.contextPath}/redirect">
-	           <input  id ="myInput" name = "id" class="form-search" type="text" placeholder="Search" >
-	             <input class="btn_search" type="submit">
+             <input  id ="myInput" name = "id" class="form-search" type="text" placeholder="Search" >
+               <input class="btn_search" type="submit">
            </form>
          </div>
     </div>
@@ -312,20 +325,42 @@ autocomplete(document.getElementById("myInput"), champ);
 </c:forEach> 
 </div>  
 </c:forEach>    
+
+
+<div class="master_content_wrap">
+  <div class = "content_wrap">
+      <!-- 포스터 -->  
+      <div class="poster_item">Poster_img</div>
+      <!-- 제목 -->  
+      <div class ="txt_title">TITLE</div>
+      <!-- 국가 / 장르 / 런타임 -->   
+      <div class="info_detail">Country │ Runtime</div>
+      <!-- 감독 / 배우 / 평점 -->  
+      <div class="info_detail_item">Release Date : <br><br>
+                                    Director : <br><br>
+                                    Actor : <br><br>
+                                    Ratings :<br><br>
+                                    Genre : 
+      </div>
+      <!-- SUMMARY(고정) -->
+      <div class="movie_summary">SUMMARY</div> 
+        <div class="movie_summary_item">ADD TEXT HERE</div>
+  </div>
+</div>
    
 <!-- ===================================== contents ===================================== -->
 
     
 <!-- ===================================== footer ===================================== -->
 
-    <footer>
+    <div class="footer-wrap">
       <div class="footer-country">PROJECT-NORAJO KOREA</div>
         <div class="copy-text">
           E-Mail : korea@norajo.com<br>
           Address : 53, Yangsan-ro, Yeongdeungpo-gu, Seoul, Republic of Korea<br>
           Copyright © NORAJO Corp. All rights reserved.
         </div>
-    </footer> 
+    </div>
     
 <!-- ===================================== footer ===================================== -->
 </body>

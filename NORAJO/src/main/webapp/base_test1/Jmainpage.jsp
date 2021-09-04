@@ -56,27 +56,7 @@ input[type=submit] {background-color: #FFA800; color: white; cursor: pointer;
 /*────────────────────────────────────header────────────────────────────────────*/
 
 
-/*────────────────────────────────────category────────────────────────────────────*/  
-
-  /* padding-top으로 상단 위치 조정*/
-  .dropdown-wrapper {padding-top: 95px; margin: 0;}
-  
-  /* 마진 패딩 지정하지 않으면 브라우저 기본 스타일을 따라 설정되므로 오버라이딩 필요 */
-  nav ul {width: 100%; background-color: #1B1B1B; list-style-type: none; 
-          margin: 0; padding: 0; text-align: center;}
-  
-  /* li 는 블록요소인데 inline-block 으로 인라인속성 부여해서 나란히 배치 */
-  nav ul li {display: inline-block;}
-  .dropdown {position: relative; width: 220px; margin: 0 40px;}
-  .dropdown-menu {color: white; padding: 16px; font-size: 14px; cursor: pointer;}
-  .dropdown-content a:hover {background-color: #f1f1f1}
-   /* dropdown-menu 에는 hover 적용이 안됨 */
-  .dropdown-menu:hover:not(.home) {background-color: #FFA800;color: white;}
-  
-  .home {font-size: 14px; cursor: pointer; width: 100px; text-align: center; width: 220px; margin: 0 40px;}
-  .home a {display: block; text-decoration: none; color: white; padding: 16px 16px;}
-  .home a:hover {background-color: #FFA800}
-  
+/*────────────────────────────────────category────────────────────────────────────*/   
   
 /*────────────────────────────────────category────────────────────────────────────*/
 
@@ -108,8 +88,8 @@ input[type=submit] {background-color: #FFA800; color: white; cursor: pointer;
 
 /*────────────────────────────────────footer────────────────────────────────────*/
 
-  footer{height: 100px; background-color: #1B1B1B; border-top: 2px solid #232323; 
-         width: 100%; text-align: center; color: #B6B6B6; position: absolute;}
+  .footer-wrap {position: absolute; left: 0; bottom: 0; width: 100%; padding: 15px 0; 
+              text-align: center; color: #B6B6B6; background: #1B1B1B; border-top: 2px solid #232323; }     
   .footer-country{font-size: 3.0 rem; font-weight: bold;}
   .copy-text{font-size: 2px; padding: 8px;}
   
@@ -284,28 +264,7 @@ autocomplete(document.getElementById("myInput"), champ);
 
 
 <!-- ===================================== category ===================================== --> 
-  <nav>
-    <ul class="dropdown-wrapper">
-    <li class="home"><a href="https://google.com">HOME</a></li>
-      <li class="dropdown">
-        <div class="dropdown-menu">DIRECTOR</div>
-<c:forEach items ="${aL}" var ="aL">
-<br>${aL.getValue()}          
-</c:forEach>
-</li>
-      <li class="dropdown">
-        <div  class="dropdown-menu">ACTOR</div>
- <c:forEach items ="${dL}" var ="dL">
-<br>${dL.getValue()}          
-</c:forEach>     
 
-
-</li>
-      <li class="dropdown">
-        <div id = “genre” class="dropdown-menu">GENRE</div>
-      </li>
-    </ul>
-  </nav>
 <!-- ===================================== category ===================================== -->
 
 
@@ -363,7 +322,11 @@ autocomplete(document.getElementById("myInput"), champ);
       
       <div class= "box_detail"> </div><!--줄거리 포함 정보-->
          <div class="movie_summary">SUMMARY</div><br>
-         <div class="movie_summary_item">Marvel Studios' "Shang-Chi and The Legend of The Ten Rings" stars Simu Liu as Shang-Chi, who must confront the past he thought he left behind when he is drawn into the web of the mysterious Ten Rings organization. The film also stars Tony Leung as Wenwu, Awkwafina as Shang-Chi's friend Katy and Michelle Yeoh as Jiang Nan, as well as Fala Chen, Meng'er Zhang, Florian Munteanu and Ronny Chieng.</div>
+         <div class="movie_summary_item">Marvel Studios' "Shang-Chi and The Legend of The Ten Rings" 
+         stars Simu Liu as Shang-Chi, who must confront the past he thought he left behind when he is 
+         drawn into the web of the mysterious Ten Rings organization. The film also stars Tony Leung as Wenwu, 
+         Awkwafina as Shang-Chi's friend Katy and Michelle Yeoh as Jiang Nan, as well as Fala Chen, Meng'er Zhang, 
+         Florian Munteanu and Ronny Chieng.</div>
 
 
 
@@ -372,14 +335,14 @@ autocomplete(document.getElementById("myInput"), champ);
     
 <!-- ===================================== footer ===================================== -->
 
-    <footer>
+    <div class="footer-wrap">
       <div class="footer-country">PROJECT-NORAJO KOREA</div>
         <div class="copy-text">
           E-Mail : korea@norajo.com<br>
           Address : 53, Yangsan-ro, Yeongdeungpo-gu, Seoul, Republic of Korea<br>
           Copyright © NORAJO Corp. All rights reserved.
         </div>
-    </footer> 
+    </div>
     
 <!-- ===================================== footer ===================================== -->
 </body>

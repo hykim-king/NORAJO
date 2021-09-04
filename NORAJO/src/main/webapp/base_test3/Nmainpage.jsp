@@ -82,24 +82,25 @@ input[type=submit] {background-color: #FFA800; color: white; cursor: pointer;
 
 
 /*────────────────────────────────────content────────────────────────────────────*/
-
-
-
-  /* Create three equal columns that floats next to each other */
-  /* (height) Should be removed. Only for demonstration */
-  .column1 { float: left; width: 30%; padding: 10, 10px; height: 700px; color: white; font-size: 20px;}
   
-  /* (height) Should be removed. Only for demonstration */
-  .column2 {float: left; width: 70%; padding: 100px 0px; height: 700px; color: white;}
-  
-  .table {border-color:orange;}
-  
-  .table tr th {font-size: 20px;}
-  
-  #movie_poster {position: relative; left: 30px; width: 300px; height: 500px; padding: 10px; border: 3px solid orange;}
+.master_content_wrap{width: 585px; padding: 20 0 20 0px; margin: 0 auto;}
 
+.content_wrap{display: block; width: 600px; height: 600px; padding: 30 20 30 20px; 
+              background-color: white; border: 1px solid black; margin: center;}
 
+.poster_item{display: block; border: 1px solid black; line-height: 300px;
+             width: 260px; height: 310px; text-align: center; float: left;}
 
+.txt_title{width: 295px; float: right; font-size: 25px; font-weight: 600; padding: 0 5 0 5px; border-bottom: 2px solid black;}
+
+.info_detail{width: 295px; float: right; top: 10px; margin: 5 0 10 0px; padding: 0 5 0 5px; font-size: 12px;}
+
+.info_detail_item{width: 295px; float: right; top: 10px; padding: 10 5 10 5px; background: lightgray; }
+
+.movie_summary{width: 598px; float: left; font-size: 25px; font-weight: bold; margin: 25 0 15 0px; border-bottom: 2px solid black;}
+
+.movie_summary_item{width: 598px; height: 210px; float: left; font-size:1.15rem; font-weight: 30;}
+                
 /*────────────────────────────────────content────────────────────────────────────*/
 
 
@@ -124,7 +125,6 @@ input[type=submit] {background-color: #FFA800; color: white; cursor: pointer;
 </head>
 <body>
 <!-- ===================================== header ===================================== --> 
-
   <header>
     <div class="wrapper">
       <a href="https://google.com"> <!-- 로고 클릭시 구글로 이동 test-->
@@ -306,95 +306,48 @@ autocomplete(document.getElementById("myInput"), champ);
 <!-- ===================================== category ===================================== -->
 
 
-<!--===================================== contents ===================================== --> 
+<!-- ===================================== contents ===================================== --> 
 
 
 <c:forEach items="${poster}" var="genre">
-	<div class="content_wrapper">
-	
-	<tr>${genre.key}</tr>
-		<c:forEach items="${genre.value}" var = "tranche">
-		
-			<br><c:set value = "sixieme_?want=${tranche.getId().substring(1, 10)}" var = "href"/>
-				<a href = ${href}><image src = ${tranche.getPoster()} alt = "image" sizes="(min-width: 600px) 200px, 50vw" ></a>
-			<br>${tranche.getName()}
-			<br>${tranche.getRating()}
-			<br>${tranche.getYear()}
-			<br>
-		
-		</c:forEach> 
-	</div>  
+<div class="content_wrapper">
+
+<tr>${genre.key}</tr>
+<c:forEach items="${genre.value}" var = "tranche">
+
+<br><c:set value = "sixieme_?want=${tranche.getId().substring(1, 10)}" var = "href"/>
+<a href = ${href}><image src = ${tranche.getPoster()} alt = "image" sizes="(min-width: 600px) 200px, 50vw" ></a>
+<br>${tranche.getName()}
+<br>${tranche.getRating()}
+<br>${tranche.getYear()}
+<br>
+
+</c:forEach> 
+</div>  
 </c:forEach>    
 
 
-<script>
-function btn1Clicked() {
-    var btn1 = document.getElementById("testBtn1");
-    
-    if(btn1.getInnerHTML() == "liked") {
-        //console.log("btn1.getInnerHTML()", btn1.getInnerHTML());      
-        btn1.innerText = "like";
-    } else {
-        //console.log("btn1.getInnerHTML()", btn1.getInnerHTML());  
-      btn1.innerText = "liked";
-    }
-}
-</script>
-
-
-
-<div class="row">
-  <div class="column1">
-    <h3 id="title">Sau gei hung lung</h3><br>
-    <img id="movie_poster" alt="Sau gei hung lung" src="https://m.media-amazon.com/images/M/MV5BNDM4OTcwNTMtNmQ2Ny00MWQ3LWI3MWUtNzdkNzA2OGE4ZTg4XkEyXkFqcGdeQXVyMjg0MTI5NzQ@._V1_SX300.jpg'">
-  </div>
-  <div class="column2">
-    <!-- <button class="btn btn-like">
-        <span class="btn-icon btn--icon-default">
-          <span class="fa fa-heart"></span>
-        </span>
-        <span class="btn-icon btn--icon-liked">
-          <span class="fa fa-heart"></span>
-        </span>
-        <span class="btn-content  btn-content--liked">
-         Liked
-        </span>
-        <span class="btn-content btn-content--default">
-         Like
-        </span>
-    </button> -->
-    <button class="btn" id="testBtn1" onclick="btn1Clicked()">like</button>
-    <table class="table" >
-     <tr>
-     <th bgcolor="orange">Released</th>
-     <th bgcolor="orange">Runtime</th>
-     <th bgcolor="orange">Rated</th>
-     </tr>
-     <tr>
-       <td>16 Mar 2000</td>
-       <td>120</td>
-       <td>79.8</td><br>
-     </tr>
-     <tr>
-      <th bgcolor="orange">Director</th>
-      <th bgcolor="orange">Actors</th>
-      <th bgcolor="orange">Genre</th>
-     </tr>
-     <tr>
-        <td>Sam Shu-Pui Ho</td>
-        <td>Sammul Chan</td>
-        <td>Comedy, Horror</td>
-     </tr>
-    </table>
-    <h1 id="summary">summary</h1>
-    <p>Anthony Wong plays the curiously named Lee Siu-Lung (that\'s Bruce Lee to you and me), a penny-ante loan shark in need of some quick cash. After a silly run-in with a debtor that provides few dividends, our man "Bruce" c',</p>
+<div class="master_content_wrap">
+  <div class = "content_wrap">
+      <!-- 포스터 -->  
+      <div class="poster_item">Poster_img</div>
+      <!-- 제목 -->  
+      <div class ="txt_title">Shang-chi</div>
+      <!-- 국가 / 장르 / 런타임 -->   
+      <div class="info_detail">America, Australia │ 2h 13m</div>
+      <!-- 감독 / 배우 / 평점 -->  
+      <div class="info_detail_item">Release Date : Sep 3, 2021<br><br>
+                                    Director : Desrin Daniel Cretton<br><br>
+                                    Actor : Kevin Feige, Jonathan Schwartz<br><br>
+                                    Ratings :<br><br>
+                                    Genre : Fantasy, Action, Adventure
+      </div>
+      <!-- SUMMARY(고정) -->
+      <div class="movie_summary">SUMMARY</div> 
+        <div class="movie_summary_item">Marvel Studios' "Shang-Chi and The Legend of The Ten Rings" stars Simu Liu as Shang-Chi, who must confront the past he thought he left behind when he is drawn into the web of the mysterious Ten Rings organization. The film also stars Tony Leung as Wenwu, Awkwafina as Shang-Chi's friend Katy and Michelle Yeoh as Jiang Nan, as well as Fala Chen, Meng'er Zhang, Florian Munteanu and Ronny Chieng.</div>
   </div>
 </div>
-
-
-
-
-
+   
 <!-- ===================================== contents ===================================== -->
 
     
