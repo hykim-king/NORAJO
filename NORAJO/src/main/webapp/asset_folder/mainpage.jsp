@@ -1,0 +1,365 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>   
+
+<html>
+<head>
+<!-- ===================================== CSS ===================================== -->
+  <style type="text/css">
+  
+  * {margin:0; padding:0;}
+  li{list-style: none;}
+  a{text-decoration: none;}
+  body{background: black;}
+
+/*────────────────────────────────────header────────────────────────────────────*/
+
+  .wrapper{width: 1170px; margin: 0 auto;}
+  .clearfix{content:''; display: block; clear: both;}
+  
+  header{height: 80px; background-color: #1B1B1B; border-bottom: 2px solid #232323; position: fixed;
+         border-top: 15px solid black; width: 100%; z-index: 9999;}
+  
+  .logo{color: white; line-height: 75px; float: left; padding: 12px;}
+
+  .login-area{float: right; padding-right: 20px; padding-left: 20px;}
+  .login-area li{float: right;}
+  .login-area a:hover{cursor: pointer; color: white;}
+  .login-area a{line-height: 75px; color: #B6B6B6; font-size: 12px; padding: 0 15px; display: block;}
+
+  input:-ms-input-placeholder{color:#a8a8a8;}
+  input::-webkit-input-placeholder{color: #a8a8a8;}
+  input::-moz-placeholder{color: #a8a8a8;} 
+  
+
+input {border: 1px solid transparent; background-color: #f1f1f1; padding: 10px; font-size: 16px;}
+
+input[type=text] {background-color: #f1f1f1; width: 590px; border-radius: 4px 0 0 4px;}
+
+input[type=submit] {background-color: #FFA800; color: white; cursor: pointer; 
+                    width: 80px; height: 40px; float: right; border-radius: 0 4px 4px 0;}
+
+.autocomplete{padding: 19px 200px 0px 300px;}
+
+/*position the autocomplete items to be the same width as the container:*/
+.autocomplete-items {  position: absolute; border: 1px solid #d4d4d4; border-bottom: none; 
+                       border-top: none; z-index: 99; top: 100%; left: 0; right: 0;}
+
+.autocomplete-items div {padding: 10px; cursor: pointer; background-color: #fff; border-bottom: 1px solid #d4d4d4;}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {background-color: #e9e9e9;}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {background-color: DodgerBlue !important; color: #ffffff;}
+
+  
+/*────────────────────────────────────header────────────────────────────────────*/
+
+
+/*────────────────────────────────────category────────────────────────────────────*/  
+
+  /* padding-top으로 상단 위치 조정*/
+  .dropdown-wrapper {padding-top: 95px; margin: 0;}
+  
+  /* 마진 패딩 지정하지 않으면 브라우저 기본 스타일을 따라 설정되므로 오버라이딩 필요 */
+  nav ul {width: 100%; background-color: #1B1B1B; list-style-type: none; 
+          margin: 0; padding: 0; text-align: center;}
+  
+  /* li 는 블록요소인데 inline-block 으로 인라인속성 부여해서 나란히 배치 */
+  nav ul li {display: inline-block;}
+  .dropdown {position: relative; width: 220px; margin: 0 40px;}
+  .dropdown-menu {color: white; padding: 16px; font-size: 14px; cursor: pointer;}
+  .dropdown-content a:hover {background-color: #f1f1f1}
+   /* dropdown-menu 에는 hover 적용이 안됨 */
+  .dropdown-menu:hover:not(.home) {background-color: #FFA800;color: white;}
+  
+  .home {font-size: 14px; cursor: pointer; width: 100px; text-align: center; width: 220px; margin: 0 40px;}
+  .home a {display: block; text-decoration: none; color: white; padding: 16px 16px;}
+  .home a:hover {background-color: #FFA800}
+  
+  
+/*────────────────────────────────────category────────────────────────────────────*/
+
+
+/*────────────────────────────────────content────────────────────────────────────*/
+  
+.master_content_wrap{width: 585px; padding: 20 0 20 0px; margin: 0 auto;}
+.content_wrap{display: block; width: 600px; height: 600px; padding: 30 20 30 20px; 
+              background-color: white; border: 1px solid black; margin: center;}
+.poster_item{display: block; border: 1px solid black; line-height: 300px;
+             width: 260px; height: 310px; text-align: center; float: left;}
+.txt_title{width: 295px; float: right; font-size: 25px; font-weight: 600; padding: 0 5 0 5px; border-bottom: 2px solid black;}
+.info_detail{width: 295px; float: right; top: 10px; margin: 5 0 10 0px; padding: 0 5 0 5px; font-size: 12px;}
+.info_detail_item{width: 295px; float: right; top: 10px; padding: 10 5 10 5px; background: lightgray; }
+.movie_summary{width: 598px; float: left; font-size: 25px; font-weight: bold; margin: 25 0 15 0px; border-bottom: 2px solid black;}
+.movie_summary_item{width: 598px; height: 210px; float: left; font-size:1.15rem; font-weight: 30;}
+                
+/*────────────────────────────────────content────────────────────────────────────*/
+
+
+/*────────────────────────────────────footer────────────────────────────────────*/
+
+  .footer-wrap {position: absolute; left: 0; bottom: 0; width: 100%; padding: 15px 0; 
+              text-align: center; color: #B6B6B6; background: #1B1B1B; border-top: 2px solid #232323; }     
+  .footer-country{font-size: 3.0 rem; font-weight: bold;}
+  .copy-text{font-size: 2px; padding: 8px;}
+  
+/*────────────────────────────────────footer────────────────────────────────────*/
+  
+  </style>
+<!-- ===================================== CSS ===================================== -->
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="${pageContext.request.contextPath}/resources/img/favicon.png">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+<title>Norajo</title>
+</head>
+<body>
+<!-- ===================================== header ===================================== --> 
+  <header>
+    <div class="wrapper">
+      <a href="https://google.com"> <!-- 로고 클릭시 구글로 이동 test-->
+        <img class="logo" src="${pageContext.request.contextPath}/resources/img/icon_norajo.png" 
+             width="180" alt="LOGO"></a>
+        <nav class="login-area">
+          <ul>
+            <li><a href="https://google.com">Sign Up</a></li>
+            <li><a href="https://google.com">Login</a></li>
+          </ul>
+         </nav>
+         <div class= "autocomplete">
+           <form autocomplete = "off" action= "${pageContext.request.contextPath}/redirect">
+             <input  id ="myInput" name = "id" class="form-search" type="text" placeholder="Search" >
+               <input class="btn_search" type="submit">
+           </form>
+         </div>
+    </div>
+
+
+<script>
+function autocomplete(inp, arr) {
+  /*the autocomplete function takes two arguments,
+  the text field element and an array of possible autocompleted values:*/
+  var currentFocus;
+  /*execute a function when someone writes in the text field:*/
+  inp.addEventListener("input", function(e) {
+      var a, b, i, val = this.value;
+      /*close any already open lists of autocompleted values*/
+      closeAllLists();
+      if (!val) { return false;}
+      currentFocus = -1;
+      /*create a DIV element that will contain the items (values):*/
+      a = document.createElement("DIV");
+      a.setAttribute("id", this.id + "autocomplete-list");
+      a.setAttribute("class", "autocomplete-items");
+      /*append the DIV element as a child of the autocomplete container:*/
+      this.parentNode.appendChild(a);
+      /*for each item in the array...*/
+      for (i = 0; i < arr.length; i++) {
+        /*check if the item starts with the same letters as the text field value:*/
+        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+          /*create a DIV element for each matching element:*/
+          b = document.createElement("DIV");
+          /*make the matching letters bold:*/
+          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+          b.innerHTML += arr[i].substr(val.length);
+          /*insert a input field that will hold the current array item's value:*/
+          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+          /*execute a function when someone clicks on the item value (DIV element):*/
+          b.addEventListener("click", function(e) {
+              /*insert the value for the autocomplete text field:*/
+              inp.value = this.getElementsByTagName("input")[0].value;
+              /*close the list of autocompleted values,
+              (or any other open lists of autocompleted values:*/
+              closeAllLists();
+          });
+          a.appendChild(b);
+        }
+      }
+  });
+  /*execute a function presses a key on the keyboard:*/
+  inp.addEventListener("keydown", function(e) {
+      var x = document.getElementById(this.id + "autocomplete-list");
+      if (x) x = x.getElementsByTagName("div");
+      if (e.keyCode == 40) {
+        /*If the arrow DOWN key is pressed,
+        increase the currentFocus variable:*/
+        currentFocus++;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 38) { //up
+        /*If the arrow UP key is pressed,
+        decrease the currentFocus variable:*/
+        currentFocus--;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 13) {
+        /*If the ENTER key is pressed, prevent the form from being submitted,*/
+        e.preventDefault();
+        if (currentFocus > -1) {
+          /*and simulate a click on the "active" item:*/
+          if (x) x[currentFocus].click();
+        }
+      }
+  });
+  function addActive(x) {
+    /*a function to classify an item as "active":*/
+    if (!x) return false;
+    /*start by removing the "active" class on all items:*/
+    removeActive(x);
+    if (currentFocus >= x.length) currentFocus = 0;
+    if (currentFocus < 0) currentFocus = (x.length - 1);
+    /*add class "autocomplete-active":*/
+    x[currentFocus].classList.add("autocomplete-active");
+  }
+  function removeActive(x) {
+    /*a function to remove the "active" class from all autocomplete items:*/
+    for (var i = 0; i < x.length; i++) {
+      x[i].classList.remove("autocomplete-active");
+    }
+  }
+  function closeAllLists(elmnt) {
+    /*close all autocomplete lists in the document,
+    except the one passed as an argument:*/
+    var x = document.getElementsByClassName("autocomplete-items");
+    for (var i = 0; i < x.length; i++) {
+      if (elmnt != x[i] && elmnt != inp) {
+        x[i].parentNode.removeChild(x[i]);
+      }
+    }
+  }
+  /*execute a function when someone clicks in the document:*/
+  document.addEventListener("click", function (e) {
+      closeAllLists(e.target);
+  });
+}
+
+const aL = ${actorList};
+const dL = ${directorList};
+const tL = ${titleList};
+console.log(aL);
+console.log(dL);
+console.log(tL);
+const champ = [];
+for(var i = 0; i < aL.length ;i++ ){
+let val = aL[i]["value"];
+let key = aL[i]["key"];
+let sub = val.substring(1, val.length -1);
+
+champ.push(sub.concat(' ','actor', ' ', key));
+}
+for(var i = 0; i < dL.length ;i++ ){
+let val = dL[i]["value"];
+let key = dL[i]["key"];
+let sub = val.substring(1, val.length -1);
+
+champ.push(sub.concat(' ','director', ' ', key));
+}
+for(var i = 0; i < tL.length ; i++){
+let val = tL[i]["name"];
+let idw = tL[i]["id"];
+let id = idw.substring(1, idw.length -1);
+let sub = val.substring(1, val.length -1);
+champ.push(sub.concat(' ','title', ' ', id));
+}
+
+/*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+autocomplete(document.getElementById("myInput"), champ);
+</script>
+
+  </header>
+<!-- ===================================== header ===================================== --> 
+
+
+<!-- ===================================== category ===================================== --> 
+  <nav>
+    <ul class="dropdown-wrapper">
+    <li class="home"><a href="https://google.com">HOME</a></li>
+      <li class="dropdown">
+        <div class="dropdown-menu">DIRECTOR</div>
+<c:forEach items ="${aL}" var ="aL">
+<br>${aL.getValue()}          
+</c:forEach>
+</li>
+      <li class="dropdown">
+        <div  class="dropdown-menu">ACTOR</div>
+ <c:forEach items ="${dL}" var ="dL">
+<br>${dL.getValue()}          
+</c:forEach>     
+
+
+</li>
+      <li class="dropdown">
+        <div id = “genre” class="dropdown-menu">GENRE</div>
+      </li>
+    </ul>
+  </nav>
+<!-- ===================================== category ===================================== -->
+
+
+<!-- ===================================== contents ===================================== --> 
+
+
+<c:forEach items="${poster}" var="genre">
+<div class="content_wrapper">
+
+<tr>${genre.key}</tr>
+<c:forEach items="${genre.value}" var = "tranche">
+
+<br><c:set value = "sixieme_?want=${tranche.getId().substring(1, 10)}" var = "href"/>
+<a href = ${href}><image src = ${tranche.getPoster()} alt = "image" sizes="(min-width: 600px) 200px, 50vw" ></a>
+<br>${tranche.getName()}
+<br>${tranche.getRating()}
+<br>${tranche.getYear()}
+<br>
+
+</c:forEach> 
+</div>  
+</c:forEach>    
+
+
+
+<!-- div틀은 유지할것 그렇지 않으면 라인이 망가짐 
+     <a href="#">는 임시로 넣어둔 것, 언제든 다른것으로 바꾸기 가능.
+-->
+
+<div class="master_content_wrap">
+  <div class = "content_wrap"> 
+      <!-- 포스터 -->  
+      <div class="poster_item"><a href="#">Poster_img</a></div>
+      <!-- 제목 -->  
+      <div class ="txt_title">TITLE</div>
+      <!-- 국가 / 장르 / 런타임 -->   
+      <div class="info_detail">Country │ Runtime</div>
+      <!-- 감독 / 배우 / 평점 -->  
+      <div class="info_detail_item">Release Date : <a href="#"></a><br><br>
+                                    Director : <a href="#"></a><br><br>
+                                    Actor : <a href="#"></a><br><br>
+                                    Ratings : <a href="#"></a><br><br>
+                                    Genre : <a href="#"></a>
+      </div>
+      <!-- SUMMARY(고정) -->
+      <div class="movie_summary">SUMMARY</div> 
+        <div class="movie_summary_item">ADD TEXT HERE</div>
+  </div>
+</div>
+   
+<!-- ===================================== contents ===================================== -->
+
+    
+<!-- ===================================== footer ===================================== -->
+
+    <div class="footer-wrap">
+      <div class="footer-country">PROJECT-NORAJO KOREA</div>
+        <div class="copy-text">
+          E-Mail : korea@norajo.com<br>
+          Address : 53, Yangsan-ro, Yeongdeungpo-gu, Seoul, Republic of Korea<br>
+          Copyright © NORAJO Corp. All rights reserved.
+        </div>
+    </div>
+    
+<!-- ===================================== footer ===================================== -->
+</body>
+</html>

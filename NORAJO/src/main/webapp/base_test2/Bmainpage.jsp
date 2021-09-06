@@ -28,63 +28,29 @@
 
   input:-ms-input-placeholder{color:#a8a8a8;}
   input::-webkit-input-placeholder{color: #a8a8a8;}
-  input::-moz-placeholder{color: #a8a8a8;}
+  input::-moz-placeholder{color: #a8a8a8;} 
   
-  .search-bar{position: absolute; height: 36px; width: 500px; top: 18px; left: 44%; 
-              border: 2px solid #FFA800; border-radius: 4px;}
-  .form-search{background-color: white; font-size: 14px; width: 420px; padding: 10px; 
-               border: 0px; outline: none; float: left; color: black;}
-  .btn_search{width: 60px; height: 100%; border: 0px; background: #FFA800;
-              outline: none; float: right; color: white;}
-  i {color: #1B1B1B; font-size: 20px;}
 
-input {
-  border: 1px solid transparent;
-  background-color: #f1f1f1;
-  padding: 10px;
-  font-size: 16px;
-}
+input {border: 1px solid transparent; background-color: #f1f1f1; padding: 10px; font-size: 16px;}
 
-input[type=text] {
-  background-color: #f1f1f1;
-  width: 500px;
-}
+input[type=text] {background-color: #f1f1f1; width: 590px; border-radius: 4px 0 0 4px;}
 
-input[type=submit] {
-  background-color: DodgerBlue;
-  color: #fff;
-  cursor: pointer;
-}
+input[type=submit] {background-color: #FFA800; color: white; cursor: pointer; 
+                    width: 80px; height: 40px; float: right; border-radius: 0 4px 4px 0;}
 
-.autocomplete-items {
-  position: absolute;
-  border: 1px solid #d4d4d4;
-  border-bottom: none;
-  border-top: none;
-  z-index: 99;
-  /*position the autocomplete items to be the same width as the container:*/
-  top: 100%;
-  left: 0;
-  right: 0;
-}
+.autocomplete{padding: 19px 200px 0px 300px;}
 
-.autocomplete-items div {
-  padding: 10px;
-  cursor: pointer;
-  background-color: #fff; 
-  border-bottom: 1px solid #d4d4d4; 
-}
+/*position the autocomplete items to be the same width as the container:*/
+.autocomplete-items {  position: absolute; border: 1px solid #d4d4d4; border-bottom: none; 
+                       border-top: none; z-index: 99; top: 100%; left: 0; right: 0;}
+
+.autocomplete-items div {padding: 10px; cursor: pointer; background-color: #fff; border-bottom: 1px solid #d4d4d4;}
 
 /*when hovering an item:*/
-.autocomplete-items div:hover {
-  background-color: #e9e9e9; 
-}
+.autocomplete-items div:hover {background-color: #e9e9e9;}
 
 /*when navigating through the items using the arrow keys:*/
-.autocomplete-active {
-  background-color: DodgerBlue !important; 
-  color: #ffffff; 
-}
+.autocomplete-active {background-color: DodgerBlue !important; color: #ffffff;}
 
   
 /*────────────────────────────────────header────────────────────────────────────*/
@@ -108,7 +74,7 @@ input[type=submit] {
   .dropdown-menu:hover:not(.home) {background-color: #FFA800;color: white;}
   
   .home {font-size: 14px; cursor: pointer; width: 100px; text-align: center; width: 220px; margin: 0 40px;}
-  .home a {display: block; text-decoration: none;color: white; padding: 16px 16px;}
+  .home a {display: block; text-decoration: none; color: white; padding: 16px 16px;}
   .home a:hover {background-color: #FFA800}
   
   
@@ -116,19 +82,31 @@ input[type=submit] {
 
 
 /*────────────────────────────────────content────────────────────────────────────*/
+
+
+
+  /* Create three equal columns that floats next to each other */
+  /* (height) Should be removed. Only for demonstration */
+  .column1 { float: left; width: 30%; padding: 10, 10px; height: 700px; color: white; font-size: 20px;}
   
-  /* contents의 내용이 들어갈 부분을 나타내기 위해 border로 상자 만들어둠
-  .content_wrapper{background-color: black; width: 1170px; margin: 0 auto; 
-                border-left: 1px solid white; border-right: 1px solid white;
-                border-top: 1px solid white; border-bottom: 1px solid white;} */
-                
+  /* (height) Should be removed. Only for demonstration */
+  .column2 {float: left; width: 70%; padding: 100px 0px; height: 700px; color: white;}
+  
+  .table {border-color:orange;}
+  
+  .table tr th {font-size: 20px;}
+  
+  #movie_poster {position: relative; left: 30px; width: 300px; height: 500px; padding: 10px; border: 3px solid orange;}
+
+
+
 /*────────────────────────────────────content────────────────────────────────────*/
 
 
 /*────────────────────────────────────footer────────────────────────────────────*/
 
-  footer{height: 80px; background-color: #1B1B1B; border-top: 2px solid #232323; 
-         width: 100%; text-align: center; color: #B6B6B6; padding: 10px;}
+  .footer-wrap {position: absolute; left: 0; bottom: 0; width: 100%; padding: 15px 0; 
+              text-align: center; color: #B6B6B6; background: #1B1B1B; border-top: 2px solid #232323; }     
   .footer-country{font-size: 3.0 rem; font-weight: bold;}
   .copy-text{font-size: 2px; padding: 8px;}
   
@@ -140,16 +118,17 @@ input[type=submit] {
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" type="image/x-icon" href="${pageContext.request.contextPath}/resources/img/favicon1.png">
+<link rel="icon" type="image/x-icon" href="${pageContext.request.contextPath}/resources/img/favicon.png">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
 <title>Norajo</title>
 </head>
 <body>
 <!-- ===================================== header ===================================== --> 
+
   <header>
     <div class="wrapper">
       <a href="https://google.com"> <!-- 로고 클릭시 구글로 이동 test-->
-        <img class="logo" src="${pageContext.request.contextPath}/resources/img/norajologo3.png" 
+        <img class="logo" src="${pageContext.request.contextPath}/resources/img/icon_norajo.png" 
              width="180" alt="LOGO"></a>
         <nav class="login-area">
           <ul>
@@ -157,18 +136,15 @@ input[type=submit] {
             <li><a href="https://google.com">Login</a></li>
           </ul>
          </nav>
-
-
-
-<form autocomplete = "off" action= "${pageContext.request.contextPath}/redirect">
          <div class= "autocomplete">
-           <input  id ="myInput" name = "id" class="form-search" type="text" placeholder="Search" >
-             <button class="btn_search" type="submit">
-               <i class="fas fa-search" aria-hidden="true"></i>
-             </button>
+           <form autocomplete = "off" action= "${pageContext.request.contextPath}/redirect">
+	           <input  id ="myInput" name = "id" class="form-search" type="text" placeholder="Search" >
+	             <input class="btn_search" type="submit">
+           </form>
          </div>
     </div>
-</form>
+
+
 <script>
 function autocomplete(inp, arr) {
   /*the autocomplete function takes two arguments,
@@ -330,39 +306,108 @@ autocomplete(document.getElementById("myInput"), champ);
 <!-- ===================================== category ===================================== -->
 
 
-<!-- ===================================== contents ===================================== --> 
+<!--===================================== contents ===================================== --> 
 
 
 <c:forEach items="${poster}" var="genre">
-<div class="content_wrapper">
-
-<tr>${genre.key}</tr>
-<c:forEach items="${genre.value}" var = "tranche">
-
-<br><c:set value = "sixieme_?want=${tranche.getId().substring(1, 10)}" var = "href"/>
-<a href = ${href}><image src = ${tranche.getPoster()} alt = "image" sizes="(min-width: 600px) 200px, 50vw" ></a>
-<br>${tranche.getName()}
-<br>${tranche.getRating()}
-<br>${tranche.getYear()}
-<br>
-
-</c:forEach> 
-</div>  
+	<div class="content_wrapper">
+	
+	<tr>${genre.key}</tr>
+		<c:forEach items="${genre.value}" var = "tranche">
+		
+			<br><c:set value = "sixieme_?want=${tranche.getId().substring(1, 10)}" var = "href"/>
+				<a href = ${href}><image src = ${tranche.getPoster()} alt = "image" sizes="(min-width: 600px) 200px, 50vw" ></a>
+			<br>${tranche.getName()}
+			<br>${tranche.getRating()}
+			<br>${tranche.getYear()}
+			<br>
+		
+		</c:forEach> 
+	</div>  
 </c:forEach>    
-   
+
+
+<script>
+function btn1Clicked() {
+    var btn1 = document.getElementById("testBtn1");
+    
+    if(btn1.getInnerHTML() == "liked") {
+        //console.log("btn1.getInnerHTML()", btn1.getInnerHTML());      
+        btn1.innerText = "like";
+    } else {
+        //console.log("btn1.getInnerHTML()", btn1.getInnerHTML());  
+      btn1.innerText = "liked";
+    }
+}
+</script>
+
+
+
+<div class="row">
+  <div class="column1">
+    <h3 id="title">Sau gei hung lung</h3><br>
+    <img id="movie_poster" alt="Sau gei hung lung" src="https://m.media-amazon.com/images/M/MV5BNDM4OTcwNTMtNmQ2Ny00MWQ3LWI3MWUtNzdkNzA2OGE4ZTg4XkEyXkFqcGdeQXVyMjg0MTI5NzQ@._V1_SX300.jpg'">
+  </div>
+  <div class="column2">
+    <!-- <button class="btn btn-like">
+        <span class="btn-icon btn--icon-default">
+          <span class="fa fa-heart"></span>
+        </span>
+        <span class="btn-icon btn--icon-liked">
+          <span class="fa fa-heart"></span>
+        </span>
+        <span class="btn-content  btn-content--liked">
+         Liked
+        </span>
+        <span class="btn-content btn-content--default">
+         Like
+        </span>
+    </button> -->
+    <button class="btn" id="testBtn1" onclick="btn1Clicked()">like</button>
+    <table class="table" >
+     <tr>
+     <th bgcolor="orange">Released</th>
+     <th bgcolor="orange">Runtime</th>
+     <th bgcolor="orange">Rated</th>
+     </tr>
+     <tr>
+       <td>16 Mar 2000</td>
+       <td>120</td>
+       <td>79.8</td><br>
+     </tr>
+     <tr>
+      <th bgcolor="orange">Director</th>
+      <th bgcolor="orange">Actors</th>
+      <th bgcolor="orange">Genre</th>
+     </tr>
+     <tr>
+        <td>Sam Shu-Pui Ho</td>
+        <td>Sammul Chan</td>
+        <td>Comedy, Horror</td>
+     </tr>
+    </table>
+    <h1 id="summary">summary</h1>
+    <p>Anthony Wong plays the curiously named Lee Siu-Lung (that\'s Bruce Lee to you and me), a penny-ante loan shark in need of some quick cash. After a silly run-in with a debtor that provides few dividends, our man "Bruce" c',</p>
+  </div>
+</div>
+
+
+
+
+
 <!-- ===================================== contents ===================================== -->
 
     
 <!-- ===================================== footer ===================================== -->
 
-    <footer>
+    <div class="footer-wrap">
       <div class="footer-country">PROJECT-NORAJO KOREA</div>
         <div class="copy-text">
           E-Mail : korea@norajo.com<br>
           Address : 53, Yangsan-ro, Yeongdeungpo-gu, Seoul, Republic of Korea<br>
           Copyright © NORAJO Corp. All rights reserved.
         </div>
-    </footer> 
+    </div>
     
 <!-- ===================================== footer ===================================== -->
 </body>

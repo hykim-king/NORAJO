@@ -11,7 +11,7 @@
 	</appender>
 	
 	<!-- Application Loggers -->
-	<logger name="com.pcwk.norajo">
+	<logger name="com.notlelis.go">
 		<level value="info" />
 	</logger>
 	
