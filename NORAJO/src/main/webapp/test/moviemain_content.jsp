@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,85 +24,85 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<hr/>
-	<!-- movie -->
+    <hr/>
+    <!-- movie -->
     <section id="movie">
       <div class="container">
         <div class="row">
           <div>
-	          <h2 class="ir_so">horror ranking</h2>
-	          <div class="movie_chart">
+              <h2 class="ir_so">horror ranking</h2>
+              <div class="movie_chart">
               <div class="chart_cont1">
                 <div>
-	                <div class="poster">
-	                  <figure>
-	                    <a href="#">
-	                      <img src="https://m.media-amazon.com/images/M/MV5BNDM4OTcwNTMtNmQ2Ny00MWQ3LWI3MWUtNzdkNzA2OGE4ZTg4XkEyXkFqcGdeQXVyMjg0MTI5NzQ@._V1_SX300.jpg" alt="페어그랩프" >
-	                    </a> 
+                    <div class="poster">
+                      <figure>
+                        <a href="#">
+                          <img src="https://m.media-amazon.com/images/M/MV5BNDM4OTcwNTMtNmQ2Ny00MWQ3LWI3MWUtNzdkNzA2OGE4ZTg4XkEyXkFqcGdeQXVyMjg0MTI5NzQ@._V1_SX300.jpg" alt="페어그랩프" >
+                        </a> 
                     </figure>
                   </div>
                   <div class="infor">
                   <h3 align="center"><strong>Paragraph</strong></h3>
                     <div class="infor_btn">
                       <span class="year">2015</span>
-                      <img class="staricon" src ="/RPA_J09/img/pngegg.png"  alt="Red Star">
+                      <img class="staricon" src ="https://github.com/hykim-king/NORAJO/blob/30a595633266c2837d532d3509f6c97d17ca8a87/NORAJO/src/main/webapp/resources/img/redstar.png"  alt="Red Star">
                     <span class="rated">6.5</span>
                     </div>
                   </div>
                </div>
              <div>
-		            <div class="poster">
-		              <figure>
-		                <a href="#">
-		                 <img src="https://m.media-amazon.com/images/M/MV5BMDMxMjg0YTYtZjFhZC00OTY0LWFmOWItMDNmZjE0M2UzNjY3XkEyXkFqcGdeQXVyNjQ5NzQ0OTc@._V1_SX300.jpg" alt="피자와 다테리" >
-		                </a> 
-		              </figure>
-		            </div>
-		            <div class="infor">
-		                <h3 align="center"><strong>Pitza e datteri</strong></h3>
-		              <div class="infor_btn">
-		                <span class="year">2015</span>
-		                <img class="staricon" src ="/RPA_J09/img/pngegg.png" alt="Red Star">
+                    <div class="poster">
+                      <figure>
+                        <a href="#">
+                         <img src="https://m.media-amazon.com/images/M/MV5BMDMxMjg0YTYtZjFhZC00OTY0LWFmOWItMDNmZjE0M2UzNjY3XkEyXkFqcGdeQXVyNjQ5NzQ0OTc@._V1_SX300.jpg" alt="피자와 다테리" >
+                        </a> 
+                      </figure>
+                    </div>
+                    <div class="infor">
+                        <h3 align="center"><strong>Pitza e datteri</strong></h3>
+                      <div class="infor_btn">
+                        <span class="year">2015</span>
+                        <img class="staricon" src ="https://github.com/hykim-king/NORAJO/blob/30a595633266c2837d532d3509f6c97d17ca8a87/NORAJO/src/main/webapp/resources/img/redstar.png" alt="Red Star">
                     <span class="rated">8.0</span>
-		              </div>
-		            </div>
-		         </div>
-		         <div>
-		            <div class="poster">
-		              <figure>
-		                <a href="#">
-		                 <img src="https://m.media-amazon.com/images/M/MV5BOWUzM2M1MWQtYjEwNy00NzI5LWExOWEtNzI5N2Q0ZjA0Nzg4XkEyXkFqcGdeQXVyMjQzMDU1Njc@._V1_SX300.jpg" alt="아임데키인산" >
-		                </a> 
-		              </figure>
-		            </div>
-		            <div class="infor">
-		                <h3 align="center"><strong>Içimdeki Insan</strong></h3>
-		               <div class="infor_btn"> 
-		                <span class="year">2015</span>
-		                <img class="staricon" src ="/RPA_J09/img/pngegg.png" alt="Red Star">
+                      </div>
+                    </div>
+                 </div>
+                 <div>
+                    <div class="poster">
+                      <figure>
+                        <a href="#">
+                         <img src="https://m.media-amazon.com/images/M/MV5BOWUzM2M1MWQtYjEwNy00NzI5LWExOWEtNzI5N2Q0ZjA0Nzg4XkEyXkFqcGdeQXVyMjQzMDU1Njc@._V1_SX300.jpg" alt="아임데키인산" >
+                        </a> 
+                      </figure>
+                    </div>
+                    <div class="infor">
+                        <h3 align="center"><strong>Içimdeki Insan</strong></h3>
+                       <div class="infor_btn"> 
+                        <span class="year">2015</span>
+                        <img class="staricon" src ="https://github.com/hykim-king/NORAJO/blob/30a595633266c2837d532d3509f6c97d17ca8a87/NORAJO/src/main/webapp/resources/img/redstar.png" alt="Red Star">
                     <span class="rated">4.0</span>
-		              </div>
-		            </div>
-		         </div>
-		         <div>
-		            <div class="poster">
-		              <figure>
-		                <a href="#">
-		                 <img src="https://m.media-amazon.com/images/M/MV5BMjQwNzMxMTEwN15BMl5BanBnXkFtZTgwMDE4MTU0MzE@._V1_SX300.jpg" alt="시져" >
-		                </a> 
-		              </figure>
-		            </div>
-		            <div class="infor">
-		                <h3 align="center"><strong>Scissors</strong></h3>
-		               <div class="infor_btn">
-		                <span class="year">2011</span>
-		                <img class="staricon" src ="/RPA_J09/img/pngegg.png" alt="Red Star">
+                      </div>
+                    </div>
+                 </div>
+                 <div>
+                    <div class="poster">
+                      <figure>
+                        <a href="#">
+                         <img src="https://m.media-amazon.com/images/M/MV5BMjQwNzMxMTEwN15BMl5BanBnXkFtZTgwMDE4MTU0MzE@._V1_SX300.jpg" alt="시져" >
+                        </a> 
+                      </figure>
+                    </div>
+                    <div class="infor">
+                        <h3 align="center"><strong>Scissors</strong></h3>
+                       <div class="infor_btn">
+                        <span class="year">2011</span>
+                        <img class="staricon" src ="https://github.com/hykim-king/NORAJO/blob/30a595633266c2837d532d3509f6c97d17ca8a87/NORAJO/src/main/webapp/resources/img/redstar.png" alt="Red Star">
                     <span class="rated">7.4</span>
-		              </div>
-		            </div>
-		         </div>
-		    </div>
-		  </div>
+                      </div>
+                    </div>
+                 </div>
+            </div>
+          </div>
           </div>
       <h2 class="ir_so">action ranking</h2>
           <div class="movie_chart">
@@ -117,7 +119,7 @@
                     <h3 align="center"><strong>Paragraph</strong></h3>
                   <div class="infor_btn">
                     <span class="year">2015</span>
-                    <img class="staricon" src ="/RPA_J09/img/pngegg.png" alt="Red Star">
+                    <img class="staricon" src ="https://github.com/hykim-king/NORAJO/blob/30a595633266c2837d532d3509f6c97d17ca8a87/NORAJO/src/main/webapp/resources/img/redstar.png" alt="Red Star">
                     <span class="rated">6.5</span>
                   </div>
                 </div>
@@ -134,7 +136,7 @@
                     <h3 align="center"><strong>Pitza e datteri</strong></h3>
                   <div class="infor_btn">
                     <span class="year">2015</span>
-                    <img class="staricon" src ="/RPA_J09/img/pngegg.png" alt="Red Star">
+                    <img class="staricon" src ="https://github.com/hykim-king/NORAJO/blob/30a595633266c2837d532d3509f6c97d17ca8a87/NORAJO/src/main/webapp/resources/img/redstar.png" alt="Red Star">
                     <span class="rated">8.0</span>
                   </div>
                 </div>
@@ -151,7 +153,7 @@
                     <h3 align="center"><strong>Içimdeki Insan</strong></h3>
                    <div class="infor_btn"> 
                     <span class="year">2015</span>
-                    <img class="staricon" src ="/RPA_J09/img/pngegg.png" alt="Red Star">
+                    <img class="staricon" src ="https://github.com/hykim-king/NORAJO/blob/30a595633266c2837d532d3509f6c97d17ca8a87/NORAJO/src/main/webapp/resources/img/redstar.png" alt="Red Star">
                     <span class="rated">4.0</span>
                   </div>
                 </div>
@@ -168,7 +170,7 @@
                     <h3 align="center"><strong>Scissors</strong></h3>
                    <div class="infor_btn">
                     <span class="year">2011</span>
-                    <img class="staricon" src ="/RPA_J09/img/pngegg.png" alt="Red Star">
+                    <img class="staricon" src ="https://github.com/hykim-king/NORAJO/blob/30a595633266c2837d532d3509f6c97d17ca8a87/NORAJO/src/main/webapp/resources/img/redstar.png" alt="Red Star">
                     <span class="rated">7.4</span>
                   </div>
                 </div>
@@ -190,7 +192,7 @@
                     <h3 align="center"><strong>Paragraph</strong></h3>
                   <div class="infor_btn">
                     <span class="year">2015</span>
-                    <img class="staricon" src ="/RPA_J09/img/pngegg.png" alt="Red Star">
+                    <img class="staricon" src ="https://github.com/hykim-king/NORAJO/blob/30a595633266c2837d532d3509f6c97d17ca8a87/NORAJO/src/main/webapp/resources/img/redstar.png" alt="Red Star">
                     <span class="rated">6.5</span>
                   </div>
                 </div>
@@ -207,7 +209,7 @@
                     <h3 align="center"><strong>Pitza e datteri</strong></h3>
                   <div class="infor_btn">
                     <span class="year">2015</span>
-                    <img class="staricon" src ="/RPA_J09/img/pngegg.png" alt="Red Star">
+                    <img class="staricon" src ="https://github.com/hykim-king/NORAJO/blob/30a595633266c2837d532d3509f6c97d17ca8a87/NORAJO/src/main/webapp/resources/img/redstar.png" alt="Red Star">
                     <span class="rated">8.0</span>
                   </div>
                 </div>
@@ -224,7 +226,7 @@
                     <h3 align="center"><strong>Içimdeki Insan</strong></h3>
                    <div class="infor_btn"> 
                     <span class="year">2015</span>
-                    <img class="staricon" src ="/RPA_J09/img/pngegg.png" alt="Red Star">
+                    <img class="staricon" src ="https://github.com/hykim-king/NORAJO/blob/30a595633266c2837d532d3509f6c97d17ca8a87/NORAJO/src/main/webapp/resources/img/redstar.png" alt="Red Star">
                     <span class="rated">4.0</span>
                   </div>
                 </div>
@@ -241,7 +243,7 @@
                     <h3 align="center"><strong>Scissors</strong></h3>
                    <div class="infor_btn">
                     <span class="year">2011</span>
-                    <img class="staricon" src ="/RPA_J09/img/pngegg.png" alt="Red Star">
+                    <img class="staricon" src ="https://github.com/hykim-king/NORAJO/blob/30a595633266c2837d532d3509f6c97d17ca8a87/NORAJO/src/main/webapp/resources/img/redstar.png" alt="Red Star">
                     <span class="rated">7.4</span>
                   </div>
                 </div>
