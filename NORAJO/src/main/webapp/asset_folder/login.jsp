@@ -43,7 +43,7 @@ pageEncoding="UTF-8"%>
 	                 outline: 0; -webkit-appearance: none; background-color: transparent;}
 	
   .btn_login {margin: 20px 0 0; width: 100%; height: 48px; border-radius: 3px; font-size: 15px; 
-              background-color: #000; color: white;}
+              background-color: #000; color: white; border: 0; outline: 0;}
 
 	.login_append {overflow: hidden; padding: 15px 0 0;}	
 	.login_append .inp_chk {float: left;}
