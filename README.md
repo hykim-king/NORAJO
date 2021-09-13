@@ -5,7 +5,7 @@
 # 1.Project 목표  
 ### 1-1.Project 목적  
 ### 1-2.Project 배경  
-### 1-3.Project 기획단계
+### 1-3.Project 기획
 ### 1-3.Project 개발환경
 # 2.NoRaJo 팀 소개  
 ### 2-1.구성원  
