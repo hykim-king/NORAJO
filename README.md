@@ -1,4 +1,7 @@
 # 0.목차  
+##### 1.Project 목표(링크URL "1.Project 목표")   
+##### 2.NoRaJo 팀 소개(링크URL "2.NoRaJo 팀 소개")   
+##### 3.Project 진행상황(링크URL "3.Project 진행상황")   
 # 1.Project 목표  
 ### 1-1.Project 목적  
 ### 1-2.Project 배경  
