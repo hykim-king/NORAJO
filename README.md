@@ -69,7 +69,10 @@
 ### 2-1.구성원  
 ### 2-2.담당업무  
 # 3.Project 진행상황
-### 3-1.WBS  
-### 3-2.설계  
+### 3-1.WBS 
+<img src="https://github.com/hykim-king/NORAJO/blob/35d68961a0a7b8160ef2b2d16fcf4ca0cd2bb5ee/WBS.PNG" width="300px" height="300px"></img><br/>
+### 3-2.설계
+<img src="https://github.com/hykim-king/NORAJO/blob/35d68961a0a7b8160ef2b2d16fcf4ca0cd2bb5ee/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%EC%A0%95%EC%9D%98%EC%84%9C.PNG" width="300px" height="300px"></img><br/>
 ### 3-3.ERD  
+<img src="https://github.com/hykim-king/NORAJO/blob/35d68961a0a7b8160ef2b2d16fcf4ca0cd2bb5ee/exERD.PNG" width="300px" height="300px"></img><br/>
 ### 3-3.화면구상도  
