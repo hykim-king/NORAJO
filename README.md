@@ -1,6 +1,6 @@
 
    
-# 1.Project 목적  
+# 1. Project 목적  
 
 *  Spring 프레임워크를 사용하여 웹표준 Full-Stack 융합 프로젝트 구현 
 *  영화 정보 검색 시스템 구현
@@ -8,7 +8,7 @@
 *  gitHub형상관리를 사용하여 조직적 직무수행
 
 
-# 2.NoRaJo 팀 소개  
+# 2. NoRaJo 팀 소개  
 고현우 / 권보성 / 김보선 / 김진서 / 유채린
 ### 2-1.담당업무 
 |이름|담당업무|
@@ -26,7 +26,7 @@
 
 ### 3-4. 진행일정
 <img src="https://github.com/hykim-king/NORAJO/blob/35d68961a0a7b8160ef2b2d16fcf4ca0cd2bb5ee/WBS.PNG" width="1000px" height="300px"></img><br/>
-# 4.Project 설계
+# 4. Project 설계
 ### 4-1. 요구사항정의서
 <img src="https://github.com/hykim-king/NORAJO/blob/35d68961a0a7b8160ef2b2d16fcf4ca0cd2bb5ee/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%EC%A0%95%EC%9D%98%EC%84%9C.PNG" width="700px" height="500px"></img><br/>
 ### 4-2. 프로세스 흐름도
