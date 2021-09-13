@@ -57,22 +57,33 @@
 
 
 # 0.목차  
-##### [1.Project 목표](https://github.com/hykim-king/NORAJO/blob/main/README.md#1project-%EB%AA%A9%ED%91%9C "1.Project 목표")   
-##### [2.NoRaJo 팀 소개](https://github.com/hykim-king/NORAJO/blob/main/README.md#2norajo-%ED%8C%80-%EC%86%8C%EA%B0%9C "2.NoRaJo 팀 소개")   
-##### [3.Project 진행상황](https://github.com/hykim-king/NORAJO/blob/main/README.md#3project-%EC%A7%84%ED%96%89%EC%83%81%ED%99%A9 "3.Project 진행상황")   
-# 1.Project 목표  
-### 1-1.Project 목적  
-### 1-2.Project 배경  
-### 1-3.Project 기획
-### 1-3.Project 개발환경
+   
+# 1.Project 목적  
+
 # 2.NoRaJo 팀 소개  
-### 2-1.구성원  
-### 2-2.담당업무  
-# 3.Project 진행상황
-### 3-1.WBS 
+### 2-1.구성원 
+고현우 / 권보성 / 김보선 / 김진서 / 유채린
+### 2-2.담당업무 
+|이름|담당업무|
+|:-------|:-------|
+|고현우|        |  
+|권보성|        |
+|김보선|        |
+|김진서|        |
+|유채린|        |
+# 3.Project  기획
+### 3-1. 프로젝트 명
+### 3-2. 프로젝트 선정 배경
+### 3-3. 개발환경
+### 3-4. 진행일정
 <img src="https://github.com/hykim-king/NORAJO/blob/35d68961a0a7b8160ef2b2d16fcf4ca0cd2bb5ee/WBS.PNG" width="300px" height="300px"></img><br/>
-### 3-2.설계
-<img src="https://github.com/hykim-king/NORAJO/blob/35d68961a0a7b8160ef2b2d16fcf4ca0cd2bb5ee/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%EC%A0%95%EC%9D%98%EC%84%9C.PNG" width="300px" height="300px"></img><br/>
-### 3-3.ERD  
+# 4.Project 설계
+### 4-1. 요구사항정의서
+<img src="https://github.com/hykim-king/NORAJO/blob/35d68961a0a7b8160ef2b2d16fcf4ca0cd2bb5ee/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%EC%A0%95%EC%9D%98%EC%84%9C.PNG" width="300px" height="500px"></img><br/>
+### 4-2. 프로세스 흐름도
+
+### 4-3. exERD
 <img src="https://github.com/hykim-king/NORAJO/blob/35d68961a0a7b8160ef2b2d16fcf4ca0cd2bb5ee/exERD.PNG" width="300px" height="300px"></img><br/>
-### 3-3.화면구상도  
+# 5. 기능시연
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/89445560/132998593-89d545b7-1536-4957-8b00-610066aeb4a8.gif)  
+
