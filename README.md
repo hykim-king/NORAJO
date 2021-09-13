@@ -32,7 +32,7 @@
 ### 4-2. 프로세스 흐름도
 
 ### 4-3. exERD
-<img src="https://github.com/hykim-king/NORAJO/blob/35d68961a0a7b8160ef2b2d16fcf4ca0cd2bb5ee/exERD.PNG" width="900px" height="300px"></img><br/>
+<img src="https://github.com/hykim-king/NORAJO/blob/35d68961a0a7b8160ef2b2d16fcf4ca0cd2bb5ee/exERD.PNG" width="700px" height="600px"></img><br/>
 # 5. 기능시연
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/89445560/132998593-89d545b7-1536-4957-8b00-610066aeb4a8.gif)  
 
