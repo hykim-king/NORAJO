@@ -3,7 +3,7 @@
    
 # 1. Project 목적  
 
-*  자동완성 검색 기능을 보유한 영화 정보 검색 시스템 구현
+*  자동완성 검색창을 보유한 영화 정보 검색 시스템 구현
 *  Spring 프레임워크를 사용하여 웹표준 Full-Stack 융합 프로젝트 구현 
 *  Spring MVC아키텍처를 기반으로 Dispatcher-Servlet 원리 이해
 *  gitHub 형상관리를 사용하여 조직적 직무수행
@@ -45,5 +45,9 @@
 
 
 # 5. 기능시연
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/89445560/132998593-89d545b7-1536-4957-8b00-610066aeb4a8.gif)  
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/89445560/132998593-89d545b7-1536-4957-8b00-610066aeb4a8.gif)    
+<br>
+<br>
 
+
+![깃하단](https://user-images.githubusercontent.com/89445560/133356854-a720ff4d-84d1-40da-ab70-42f65b26b626.png)
