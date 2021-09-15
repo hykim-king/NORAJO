@@ -25,6 +25,8 @@
 # 3.Project  기획
 ### 3-1. 프로젝트 선정 배경
 ![노라조 글자 로고](https://user-images.githubusercontent.com/89445560/133226001-a724c49a-cdfe-46b7-82b4-defde89dc81b.png)
+<br>
+<br>
 우리는 코로나에 지친 사람들에게 힘이 되고 싶었습니다. 그리하여 가장 위생적이고 안전한 영화 박물관을 개발했습니다. 영화는 언제나 사랑받는 취미이며 코로나 이후 IT기술이 핵심적인 영향을 미치는 분야였기 때문에 우리가 배운 기술들로 구현 가능할 것이라 생각했습니다. 사회적 거리두기로 심심해진 이들을 달래기 위해 Norajo를 팀명으로 정하고 1800년대부터 현대에 이르는 영화의 정보들을 한번에 볼 수 있는 종합 검색 시스템입니다.
 
 ### 3-3. 개발환경
@@ -39,7 +41,7 @@
 <img src="https://github.com/hykim-king/NORAJO/blob/35d68961a0a7b8160ef2b2d16fcf4ca0cd2bb5ee/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%EC%A0%95%EC%9D%98%EC%84%9C.PNG" width="700px" height="500px"></img>
 
 ### 4-2. 프로세스 흐름도
-![프로세스 흐름도](https://user-images.githubusercontent.com/89445560/133357034-35efa38b-6ad8-457d-8633-4b854345d645.JPG)
+![프로세스 흐름도2](https://user-images.githubusercontent.com/89445560/133357543-3115fe62-9b40-4c5b-8505-f09f43353d28.JPG)
 
 ### 4-3. exERD
 <img src="https://github.com/hykim-king/NORAJO/blob/35d68961a0a7b8160ef2b2d16fcf4ca0cd2bb5ee/exERD.PNG" width="700px" height="600px"></img>
