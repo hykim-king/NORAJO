@@ -39,6 +39,7 @@
 <img src="https://github.com/hykim-king/NORAJO/blob/35d68961a0a7b8160ef2b2d16fcf4ca0cd2bb5ee/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%EC%A0%95%EC%9D%98%EC%84%9C.PNG" width="700px" height="500px"></img>
 
 ### 4-2. 프로세스 흐름도
+![프로세스 흐름도](https://user-images.githubusercontent.com/89445560/133357034-35efa38b-6ad8-457d-8633-4b854345d645.JPG)
 
 ### 4-3. exERD
 <img src="https://github.com/hykim-king/NORAJO/blob/35d68961a0a7b8160ef2b2d16fcf4ca0cd2bb5ee/exERD.PNG" width="700px" height="600px"></img>
