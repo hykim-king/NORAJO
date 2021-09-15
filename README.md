@@ -1,4 +1,5 @@
-![깃상단1](https://user-images.githubusercontent.com/89445560/133356528-1590ac5b-ff41-4e00-8065-56160749613b.png)
+![상단2](https://user-images.githubusercontent.com/89445560/133356771-5870fc1c-efc1-4a8f-b815-12b341659c30.png)
+   
    
 # 1. Project 목적  
 
