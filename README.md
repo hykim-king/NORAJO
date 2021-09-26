@@ -1,15 +1,15 @@
 ![상단2](https://user-images.githubusercontent.com/89445560/133356771-5870fc1c-efc1-4a8f-b815-12b341659c30.png)
 # 0. 목차
 <br>
-1. Project 목적
+- Project 목적
 <br>
-2. Norajo 팀 소개
+- Norajo 팀 소개
 <br>
-3. Project 기획
+- Project 기획
 <br>
-4. Project 설계
+- Project 설계
 <br>
-5. 기능 시연
+- 기능 시연
    
 # 1. Project 목적  
 
