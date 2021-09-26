@@ -2,9 +2,13 @@
 # 0. 목차
 <br>
 1. Project 목적
+<br>
 2. Norajo 팀 소개
+<br>
 3. Project 기획
+<br>
 4. Project 설계
+<br>
 5. 기능 시연
    
 # 1. Project 목적  
