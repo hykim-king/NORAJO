@@ -50,7 +50,7 @@
 
 # 4. Project 설계
 ### 4-1. 요구사항정의서
-<img src="https://github.com/hykim-king/NORAJO/blob/0b16de8f8bec4a669caa11313a9512f12ddfd5ba/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%EC%A0%95%EC%9D%98%EC%84%9C(0927).PNG" width="700px" height="500px"></img>
+<img src="https://github.com/hykim-king/NORAJO/blob/0b16de8f8bec4a669caa11313a9512f12ddfd5ba/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%EC%A0%95%EC%9D%98%EC%84%9C(0927).PNG" width="850px" height="700px"></img>
 
 ### 4-2. 프로세스 흐름도
 ![프로세스 흐름도2](https://user-images.githubusercontent.com/89445560/133357543-3115fe62-9b40-4c5b-8505-f09f43353d28.JPG)
