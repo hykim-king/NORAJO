@@ -61,7 +61,25 @@
 
 # 5. 기능시연
 ### 5-1. 자동완성 검색 기능
+![자동완성_검색기능](https://user-images.githubusercontent.com/89445560/134839688-99ee8ccb-fa8b-4171-9b1c-add7d4a41d93.gif)
 
+### 5-2. 연관 검색어
+![연관검색](https://user-images.githubusercontent.com/89445560/134839697-7b28c62a-690c-4c7f-bcba-037c43cbf24d.gif)
+
+### 5-3. 좋아요 기능
+![좋아요](https://user-images.githubusercontent.com/89445560/134839701-3313c27e-d57c-47f6-94ef-bd88a8aff94c.gif)
+
+### 5-4. 장르 검색
+![장르](https://user-images.githubusercontent.com/89445560/134839704-e8dbf5ce-7e41-428d-afbb-33499f4ac6a0.gif)
+
+### 5-5. 로그인
+![로그인](https://user-images.githubusercontent.com/89445560/134839706-6470f916-22f5-4061-8055-f50d4c0e1518.gif)
+
+### 5-6. 회원가입
+![회원가입](https://user-images.githubusercontent.com/89445560/134839709-b2a1a0e9-f017-4861-a392-ab757475f4ca.gif)
+
+### 5-7. 아이디/비밀번호 찾기
+![아이디비번찾기](https://user-images.githubusercontent.com/89445560/134839711-fa87b9dd-9aba-4b4c-aedd-2613f03a0a62.gif)
 <br>
 <br>
 
