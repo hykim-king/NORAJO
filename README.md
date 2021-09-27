@@ -37,9 +37,8 @@
 ![노라조 글자 로고](https://user-images.githubusercontent.com/89445560/133226001-a724c49a-cdfe-46b7-82b4-defde89dc81b.png)
 <br>
 <br>
-  Pandemic 상황 속에서 사회적 거리두기로 무료함을 느끼는 이들에게 즐거움을 선사하고자 프로젝트 명을 NORAJO로 선정하였습니다.
-<br>
-웹 페이지 NORAJO를 통해 배우, 감독, 제목, 상세 정보에 따른 검색 기능을 이용할 수 있습니다. 
+  Pandemic 상황 속에서도 누릴 수 있는 색다른 재미를 찾는 이들에게 즐거움을 선사하고자 프로젝트 명을 NORAJO로 선정하였습니다.
+ 해당 웹 페이지를 통해 배우, 감독, 제목, 상세 정보에 따른 검색 기능을 이용할 수 있습니다. 
 
 ### 3-1. 개발환경
 ![개발환경](https://user-images.githubusercontent.com/89445560/133253336-a21b9436-1b65-4e96-9c47-a0d80931feb4.png)
