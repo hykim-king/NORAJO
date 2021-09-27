@@ -34,7 +34,7 @@
 
 # 3.Project  기획
 
-![노라조 글자 로고](https://user-images.githubusercontent.com/89445560/133226001-a724c49a-cdfe-46b7-82b4-defde89dc81b.png)
+![뉴로고](https://user-images.githubusercontent.com/89445560/134839446-67af4fc3-dba4-4cb9-9de9-e5c929f9f7e9.png)
 <br>
 <br>
   Pandemic 상황 속에서도 누릴 수 있는 색다른 재미를 찾는 이들에게 즐거움을 선사하고자 프로젝트 명을 NORAJO로 선정하였습니다.
@@ -60,7 +60,8 @@
 
 
 # 5. 기능시연
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/89445560/132998593-89d545b7-1536-4957-8b00-610066aeb4a8.gif)    
+### 5-1. 자동완성 검색 기능
+
 <br>
 <br>
 
