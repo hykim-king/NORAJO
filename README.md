@@ -45,7 +45,7 @@
 ![개발환경](https://user-images.githubusercontent.com/89445560/133253336-a21b9436-1b65-4e96-9c47-a0d80931feb4.png)
 
 ### 3-2. 진행일정
-<img src="https://github.com/hykim-king/NORAJO/blob/35d68961a0a7b8160ef2b2d16fcf4ca0cd2bb5ee/WBS.PNG" width="1000px" height="300px"></img>
+<img src="https://github.com/hykim-king/NORAJO/blob/35d68961a0a7b8160ef2b2d16fcf4ca0cd2bb5ee/WBS.PNG" width="1000px" height="500px"></img>
 
 
 # 4. Project 설계
@@ -56,7 +56,7 @@
 ![프로세스 흐름도2](https://user-images.githubusercontent.com/89445560/133357543-3115fe62-9b40-4c5b-8505-f09f43353d28.JPG)
 
 ### 4-3. exERD
-<img src="https://github.com/hykim-king/NORAJO/blob/35d68961a0a7b8160ef2b2d16fcf4ca0cd2bb5ee/exERD.PNG" width="700px" height="600px"></img>
+<img src="https://github.com/hykim-king/NORAJO/blob/35d68961a0a7b8160ef2b2d16fcf4ca0cd2bb5ee/exERD.PNG" width="1000px" height="600px"></img>
 
 
 # 5. 기능시연
