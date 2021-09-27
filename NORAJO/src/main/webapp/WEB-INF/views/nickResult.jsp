@@ -64,7 +64,8 @@ body {
 
 </style>
 <meta charset="UTF-8">
-<title>아이디 찾기 결과 성공 페이지</title>
+<link rel="icon" type="image/x-icon" href="https://github.com/notlelis/img-url/blob/main/favicon1.png?raw=true">
+<title>NORAJO</title>
 </head>
 <body>
     <div class="inner">        

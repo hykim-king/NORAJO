@@ -7,98 +7,153 @@
 <!-- ===================================== CSS ===================================== -->
   <style type="text/css">
 
-/*────────────────────────────────────header────────────────────────────────────*/
-  
-  html, body {margin: 0; padding: 0; width: 100%; height: 100%; font-family: HelveticaNeueLT Std;}
-  body{font-size:1.125em; line-height: 1.6; background-image: url("https://github.com/notlelis/img-url/blob/main/bk3.png?raw=true");}
-  * {margin: 0; padding: 0; border: 0; vertical-align: baseline; box-sizing: border-box;
-     background: transparent; font-style: normal;}
-  li{list-style: none;}
+  *{margin: 0; padding: 0;}
+  body{background: no-repeat center center fixed; -webkit-background-size: cover; 
+       -moz-background-size: cover; -o-background-size: cover; background-size: cover; overflow-x: hidden; }
   a{text-decoration: none;}
-  .wrapper{display: flex; height: 100%; min-height: 100vh; flex-direction: column; margin: 0 auto;}
+  ul{list-style: none; height: 300px; overflow-x: hidden; overflow-y: scroll hidden; width: 100%; min-width: 450px;}
+  li{list-style: none; color: white; background-color: rgb(58, 61, 66, 0.8); width: 49.4%;
+     min-width: 450px; cursor: pointer; height: 30px; padding-left: 20px; padding-top: 20px;}
+
+.bg1  {background-image: url("https://github.com/notlelis/img-url/blob/main/new%20hd%20mov%20pos/1.jpg?raw=true"); image-rendering: -webkit-optimize-contrast;}
+.bg2  {background-image: url("https://github.com/notlelis/img-url/blob/main/new%20hd%20mov%20pos/2.jpg?raw=true"); image-rendering: -webkit-optimize-contrast;}
+.bg3  {background-image: url("https://github.com/notlelis/img-url/blob/main/new%20hd%20mov%20pos/3.jpg?raw=true"); image-rendering: -webkit-optimize-contrast;}
+.bg4  {background-image: url("https://github.com/notlelis/img-url/blob/main/new%20hd%20mov%20pos/4.jpg?raw=true"); image-rendering: -webkit-optimize-contrast;}
+.bg5  {background-image: url("https://github.com/notlelis/img-url/blob/main/new%20hd%20mov%20pos/5.jpg?raw=true"); image-rendering: -webkit-optimize-contrast;}
+.bg6  {background-image: url("https://github.com/notlelis/img-url/blob/main/new%20hd%20mov%20pos/6.jpg?raw=true"); image-rendering: -webkit-optimize-contrast;}
+.bg7  {background-image: url("https://github.com/notlelis/img-url/blob/main/new%20hd%20mov%20pos/7.jpg?raw=true"); image-rendering: -webkit-optimize-contrast;}
+.bg8  {background-image: url("https://github.com/notlelis/img-url/blob/main/new%20hd%20mov%20pos/8.jpg?raw=true"); image-rendering: -webkit-optimize-contrast;}
+.bg9  {background-image: url("https://github.com/notlelis/img-url/blob/main/new%20hd%20mov%20pos/9.jpg?raw=true"); image-rendering: -webkit-optimize-contrast;}
+.bg10 {background-image: url("https://github.com/notlelis/img-url/blob/main/new%20hd%20mov%20pos/10.jpg?raw=true"); image-rendering: -webkit-optimize-contrast;}
+.bg11 {background-image: url("https://github.com/notlelis/img-url/blob/main/new%20hd%20mov%20pos/11.jpg?raw=true"); image-rendering: -webkit-optimize-contrast;}
+.bg12 {background-image: url("https://github.com/notlelis/img-url/blob/main/new%20hd%20mov%20pos/12.jpg?raw=true"); image-rendering: -webkit-optimize-contrast;}
+.bg13 {background-image: url("https://github.com/notlelis/img-url/blob/main/new%20hd%20mov%20pos/13.jpg?raw=true"); image-rendering: -webkit-optimize-contrast;}
+.bg14 {background-image: url("https://github.com/notlelis/img-url/blob/main/new%20hd%20mov%20pos/14.jpg?raw=true"); image-rendering: -webkit-optimize-contrast;}
+.bg15 {background-image: url("https://github.com/notlelis/img-url/blob/main/new%20hd%20mov%20pos/15.jpg?raw=true"); image-rendering: -webkit-optimize-contrast;}
+.bg16 {background-image: url("https://github.com/notlelis/img-url/blob/main/new%20hd%20mov%20pos/16.jpg?raw=true"); image-rendering: -webkit-optimize-contrast;}
+.bg17 {background-image: url("https://github.com/notlelis/img-url/blob/main/new%20hd%20mov%20pos/17.jpg?raw=true"); image-rendering: -webkit-optimize-contrast;}
+.bg18 {background-image: url("https://github.com/notlelis/img-url/blob/main/new%20hd%20mov%20pos/18.jpg?raw=true"); image-rendering: -webkit-optimize-contrast;}
+.bg19 {background-image: url("https://github.com/notlelis/img-url/blob/main/new%20hd%20mov%20pos/19.jpg?raw=true"); image-rendering: -webkit-optimize-contrast;}
+.bg20 {background-image: url("https://github.com/notlelis/img-url/blob/main/new%20hd%20mov%20pos/20.jpg?raw=true"); image-rendering: -webkit-optimize-contrast;}
+.bg21 {background-image: url("https://github.com/notlelis/img-url/blob/main/new%20hd%20mov%20pos/21.jpg?raw=true"); image-rendering: -webkit-optimize-contrast;}
+.bg22 {background-image: url("https://github.com/notlelis/img-url/blob/main/new%20hd%20mov%20pos/22.jpg?raw=true"); image-rendering: -webkit-optimize-contrast;}
+.bg23 {background-image: url("https://github.com/notlelis/img-url/blob/main/new%20hd%20mov%20pos/23.jpg?raw=true"); image-rendering: -webkit-optimize-contrast;}
+/*────────────────────────────────────header────────────────────────────────────*/
+
+  .header_wrapper{color: #EDEDED; width: 100%; display: flex; position: relative;
+                  background-color: #0A0A0A; padding: 10px 80px 10px 80px;}
+  
+  .logo_wrapper{width: 300px; float: left; white-space: nowrap; margin-right: 60px;}
+  .logo{margin: 23px; image-rendering: -webkit-optimize-contrast;}  
   
   
-  .header-wrapper{width: 100%; height: 110px; background-color: (rgb 10, 10, 10, 0.8);
-                  padding: 40px 80px 20px 110px; display: flex; z-index: 99999;}
-
-  .logo{padding-right: 200px; padding-top: 2px; flex: 1;}
-
-
   ::-webkit-input-placeholder{color: gray;}
   ::-moz-placeholder{color: gray;}
   ::-ms-input-placeholder{color: gray;}
 
-  .autocomplete{padding-top: 12px; justify-content: center; align-items: center; width: 70%;}
-  .search-bar{width: 90%; position: relative; min-width: 200px; border-radius: 11px;}
-  
-  .search-bar input[type="text"]{width: 100%; height: 40px; padding: 10px; padding-right: 60px; box-sizing: border-box; color: white;
-                                 background-color: rgb(58, 61, 66, 0.5); border-radius: 8px; outline: none;}      
-                                     
-  .search-bar input[type="submit"]{background-color: white; color: white; cursor: pointer; 
-                                   width: 70px; height: 39px; border-radius: 0 8px 8px 0; position: absolute; right: 0; font-size: 18px;}
+  .autocomplete{width: 50%; min-width: 100px; margin: 27px; white-space: nowrap; float: left; padding-right: 60px;}
+  .search-bar input[type="text"]{width: 100%; padding: 12px; padding-right: 60px; box-sizing: border-box;
+                                 background-color: rgb(58, 61, 66, 0.5); outline: none; 
+                                 font-size: 14px; outline: none; border: 2.4px solid gray; color: white; font-family: 'Roboto', sans-serif;}    
+                                 
+  .search-bar{position: relative;}                    
+  .search-bar input:hover{border: 2.4px solid white; transition: 1s;}
+                                       
+  .search-bar input[type="submit"]{background: transparent; cursor: pointer; border: 0; text-indent: -9999em;
+                                   width: 70px; height: 39px; position: absolute; right: 0; font-size: 16px;}     
                                    
-  .fa-search{position: absolute; top: 25%; color: #0A0A0A; right: 26px; font-size: 18px; cursor: pointer; }
+  .fa-search{position: absolute; top: 28%; right: 26px; font-size: 21px; color: #C9C9C9; pointer-events: none;}
 
-
+  .ui-helper-hidden-accessible{text-indent: -9999em;}
+  
+  
+  .log_sign_wrapper{width: 260px; float: right; white-space: nowrap; margin-left: 60px; padding-top: 40px;}
   
   .login-area{float: right; text-align: center;}
+  .login-area a{color: #B6B6B6; font-size: 12px; display: block; padding-right: 40px;}
   .login-area a:hover{cursor: pointer; color: white;}
-  .login-area a{color: #B6B6B6; font-size: 14px; padding-right: 35px; padding-left: 35px;
-                display: block; border-right: 2px solid #B6B6B6; white-space: nowrap; margin-top: 22px;}
   
   .signup-area{float: right; text-align: center;}
+  .signup-area a{color: #B6B6B6; font-size: 12px; display: block; padding-right: 40px;}
   .signup-area a:hover{cursor: pointer; color: white;}
-  .signup-area a{color: #B6B6B6; font-size: 14px; padding-left: 35px; 
-                 display: block; padding-right: 60px; white-space: nowrap; margin-top: 22px;}
-
+  
 /*────────────────────────────────────header────────────────────────────────────*/
-
-
 /*────────────────────────────────────contents────────────────────────────────────*/
 /*★필독★ contents 영역 안이 빌 경우, 푸터가 헤더에 달라붙으니 꼭 컨텐츠 영역을 감싸는 부분은 height:100%를 줄것 */
+.content_body {padding-top: 10px; padding-bottom: 10px;}
+
+.content_wrapper {width: 1200px; height: 750px; padding: 30px; margin: 40px 100px 100px 80px;}
+
+.top_box {width: 100%; height: 30px; display: flex;}
+
+.c_box_s {width: 3%; height: 30px; background-color: #BA0003;}
+
+.movie_info {width: 13%; height: 30px; text-align: center; font-size: 30px; 
+             font-family: 'Oswald', sans-serif; color: white; line-height: 27px;}
+
+.c_box_l {width: 72%; height: 30px; background-color: #BA0003;}
+
+.mov_info {display: flex;}
+
+.mov_title {display: block; width: 704px; height: 50px; border-bottom: 2px solid white;
+            font-family: 'Oswald', sans-serif; color: white; margin-top: 50px; 
+            padding-left: 20px; font-size: 30px; margin-bottom: 5px; margin-left: 20px;}
+
+.poster_img {display: block; line-height: 300px; color: white; left: 0; right: 0; 
+             width: 350px; height: 450px; text-align: center; float: left; margin-top: 50px;}
+
+.img {display: block; line-height: 300px; color: white; left: 0; right: 0; 
+             width: 350px; height: 450px; text-align: center; float: left;}
+
+.info_detail {width: 1000px; height: 570px; margin: 1px;}
+
+.r_date {display: block; width: 800px; margin-top: 20px;}
+
+.director {display:flex; width: 800px; margin-top: 5px;}
+
+.actor {display: flex; width: 800px; margin-top: 5px;}
+
+.ratings {display: block; width: 800px; margin-top: 5px;}
+
+.staricon {width: 15px; height: 15px;}
+
+.genre {display: flex; width: 800px; margin-top: 5px;}
+
+.country {display: block; width: 800px; margin-top: 5px;}
+
+.runtime {display: block; width: 800px; margin-top: 5px;}
+.info_block { display: inline-table;}
+
+.info_left {width: 150px; height: auto; color: white; font-size: 18px;
+            margin-right: 5px; text-align: right; display: inline-block;}
+
+.info_right {width: 800px; height: auto; color : white; font-size: 18px; color: white;}
+
+.movie_summary {color: white; width: 1245px; height: 150px;}
+
+.mov_summary_title {font-family: 'Oswald', sans-serif; font-size: 30px; border-bottom: 2px solid white;
+                    margin-bottom: 10px; width: 88%;}
+
+.movie_summary_item {width: 70%;}
 
 
-  
-  .content_wrapper{width: 1100px; height: 900px; padding: 30px; margin: 40px 100px 100px 80px;}
-  
-  .c_box_sl{width: 100%; height: 30px; display: flex;}
-  .c_box_s{width: 4%; height: 30px; background-color: #BA0003;}
-  .c_box_l{width: 100%; height: 30px; background-color: #BA0003;}
-  
-  .mov_info{text-align: center; width: 17%; font-size: 30px; font-family: 'Oswald',sans-serif; line-height: 27px; color: white;}
+.like {margin: -91px 112px 0 0; border-radius: 10px; background-color: white; 
+       text-align: center; width: 117px; height: 35px; float: right;}
+       
+.likeheart{width: 18px; height: 16.5px; position: absolute; top: 876px; left: 1158px; pointer-events: none; image-rendering: -webkit-optimize-contrast;}
 
-
-
-
-  .poster_img{display: block; line-height: 300px; color: white; left:0; right:0;
-             width:320px; height: 450px;  text-align: center; float: left; margin-top: 50px;}
-  .mov_title{display: block; width: 700px; height: 50px; border-bottom: 2px solid white; font-family: 'Oswald',sans-serif; 
-             float: right; margin-top: 50px; padding-left: 20px; font-size: 30px; color: white;}
-  .info_detail_1{display: block; width: 190px; height: 300px; float: left; margin-top: 20px; 
-                 padding-left: 47px; line-height: 34px; text-align: right; color: white; font-size: 18px;}   
-
-  .info_detail_2{display: block; width: 530px; height: 300px; float: left; margin-top: 20px; 
-                 line-height: 34px; text-align: left; color: white; font-size: 18px;} 
-                 
-  .staricon {width:15px;}
-  
-  .movie_summary{display: block; width: 100%; height: 50px; border-bottom: 2px solid white; font-family: 'Oswald',sans-serif; 
-                float: right; margin-top: 40px; padding-left: 20px; font-size: 30px; color: white;}
-  .movie_summary_item{display: block; width: 100%; height: 170px; float: right; 
-                      margin-top: 10px; padding: 10px 20px 10px 20px; color: white; font-size: 18px;}
-
+#myButton{color: black; margin: 3px; margin-left: 19px; text-align: left; border: none; background: transparent; z-index: 1; width: 100px; height: 30px; font-size: 16px;}
 
 /*────────────────────────────────────contents────────────────────────────────────*/
-
 
 /*────────────────────────────────────footer────────────────────────────────────*/
 
   .footer-wrapper{color: #EDEDED; width: 100%; display: flex; bottom: 0; position: relative;
-                  background-color: #0A0A0A; padding: 40px 80px 40px 80px; margin-top: auto;}
+                  background-color: #0A0A0A; padding: 35px 80px 35px 80px; margin-top: auto;}
   
-  .lnb{padding-bottom: 20px; font-size: 18px;}
+  .lnb{padding-bottom: 20px;}
   
-  .btb{line-height: 25px; font-size: 12px;}
+  .btb{line-height: 25px;}
   
   .project{width: 260px; float: left; white-space: nowrap; padding-right: 60px;}
   
@@ -108,14 +163,11 @@
   
   .back-end{width: 260px; float: left; white-space: nowrap; padding-right: 60px;}
   
-  .etc{width: 260px; float: left; white-space: nowrap; padding-right: 60px;}
-  
   .contact-line{width: 510px; float: left; border-left: 2px solid #B6B6B6; 
                 padding: 0 0 0 50px; white-space: nowrap; padding-right: 60px;}
 
 /*────────────────────────────────────footer────────────────────────────────────*/
-
-  </style>
+</style>
 <!-- ===================================== CSS ===================================== -->
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -125,378 +177,170 @@
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
 <title>NORAJO</title>
 </head>
-<body>
+<body id="bod" onload="backgr()">
 
+  <script src = "<c:url value = "/js/background.js"/>"></script>
+  
 <!-- ===================================== header ===================================== -->
-<div class="wrapper">
-
   <header>
-    <div class="header-wrapper">
-      <div class="logo">
-        <a href="/springboot-access/WEB-INF/views/deuxieme_.jsp">
-          <img src="https://github.com/notlelis/img-url/blob/main/norajologo.png?raw=true" width="200px"></a>
+    <div class="header_wrapper">
+       
+      <div class="logo_wrapper"> 
+   <a href="${pageContext.request.contextPath}/${nr}">
+        <img class="logo" src="https://github.com/notlelis/img-url/blob/main/NlogoWhite.png?raw=true" width="180px"></a>
       </div>
-   
-      <div class="autocomplete">
-        <form class="search-bar" autocomplete = "off" action= "${pageContext.request.contextPath}/redirect">
-          <input  id ="myInput" name = "id" class="form-search" type="text" placeholder="Search" >
-          <input class="btn_search" type="submit">
-          <i class="fa fa-search"></i>
-        </form> 
-      </div> 
     
-      <div class="login-area">
-        <nav>
-          <ul>
-            <li><a href="/NORAJO/asset/log_in.jsp">LOGIN</a></li>
-          </ul>
-        </nav>
+    
+      <div class="autocomplete">
+        <form class="search-bar" autocomplete = "off" action= "${pageContext.request.contextPath}/redirect${rq}">
+          <input  id ="myInput" name = "id" class="form-search" type="text" placeholder="Type to search.." >
+          <input class="btn_search" type="submit"><i class="fa fa-search"></i>
+        </form> 
       </div>
       
-      <div class="signup-area">
-        <nav>
-          <ul>
-            <li><a href="/NORAJO/asset/sign_up.jsp">SIGN UP</a></li>
-          </ul>
-        </nav>
+      <div class="blank"></div>
+    
+      <div class="log_sign_wrapper">
+        <div class="signup-area">
+          <!-- 연결이 안되서 일단 꼼수 -->
+     <a href="${pageContext.request.contextPath}/${cr}">${ck}</a>
+        </div>
+        <div class="login-area">
+          <!-- 연결이 안되서 일단 꼼수 -->
+      <a href="${pageContext.request.contextPath}/${ar}">${ak}</a>
+        </div>
       </div>
     </div>
-  
-  
-<script>
-function autocomplete(inp, arr) {
-  /*the autocomplete function takes two arguments,
-  the text field element and an array of possible autocompleted values:*/
-  var currentFocus;
-  /*execute a function when someone writes in the text field:*/
-  inp.addEventListener("input", function(e) {
-      var a, b, i, val = this.value;
-      /*close any already open lists of autocompleted values*/
-      closeAllLists();
-      if (!val) { return false;}
-      currentFocus = -1;
-      /*create a DIV element that will contain the items (values):*/
-      a = document.createElement("DIV");
-      a.setAttribute("id", this.id + "autocomplete-list");
-      a.setAttribute("class", "autocomplete-items");
-      /*append the DIV element as a child of the autocomplete container:*/
-      this.parentNode.appendChild(a);
-      /*for each item in the array...*/
-      for (i = 0; i < arr.length; i++) {
-        /*check if the item starts with the same letters as the text field value:*/
-        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
-          /*create a DIV element for each matching element:*/
-          b = document.createElement("DIV");
-          /*make the matching letters bold:*/
-          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
-          b.innerHTML += arr[i].substr(val.length);
-          /*insert a input field that will hold the current array item's value:*/
-          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
-          /*execute a function when someone clicks on the item value (DIV element):*/
-          b.addEventListener("click", function(e) {
-              /*insert the value for the autocomplete text field:*/
-              inp.value = this.getElementsByTagName("input")[0].value;
-              /*close the list of autocompleted values,
-              (or any other open lists of autocompleted values:*/
-              closeAllLists();
-          });
-          a.appendChild(b);
-        }
-      }
-  });
-  /*execute a function presses a key on the keyboard:*/
-  inp.addEventListener("keydown", function(e) {
-      var x = document.getElementById(this.id + "autocomplete-list");
-      if (x) x = x.getElementsByTagName("div");
-      if (e.keyCode == 40) {
-        /*If the arrow DOWN key is pressed,
-        increase the currentFocus variable:*/
-        currentFocus++;
-        /*and and make the current item more visible:*/
-        addActive(x);
-      } else if (e.keyCode == 38) { //up
-        /*If the arrow UP key is pressed,
-        decrease the currentFocus variable:*/
-        currentFocus--;
-        /*and and make the current item more visible:*/
-        addActive(x);
-      } else if (e.keyCode == 13) {
-        /*If the ENTER key is pressed, prevent the form from being submitted,*/
-        e.preventDefault();
-        if (currentFocus > -1) {
-          /*and simulate a click on the "active" item:*/
-          if (x) x[currentFocus].click();
-        }
-      }
-  });
-  function addActive(x) {
-    /*a function to classify an item as "active":*/
-    if (!x) return false;
-    /*start by removing the "active" class on all items:*/
-    removeActive(x);
-    if (currentFocus >= x.length) currentFocus = 0;
-    if (currentFocus < 0) currentFocus = (x.length - 1);
-    /*add class "autocomplete-active":*/
-    x[currentFocus].classList.add("autocomplete-active");
-  }
-  function removeActive(x) {
-    /*a function to remove the "active" class from all autocomplete items:*/
-    for (var i = 0; i < x.length; i++) {
-      x[i].classList.remove("autocomplete-active");
-    }
-  }
-  function closeAllLists(elmnt) {
-    /*close all autocomplete lists in the document,
-    except the one passed as an argument:*/
-    var x = document.getElementsByClassName("autocomplete-items");
-    for (var i = 0; i < x.length; i++) {
-      if (elmnt != x[i] && elmnt != inp) {
-        x[i].parentNode.removeChild(x[i]);
-      }
-    }
-  }
-  /*execute a function when someone clicks in the document:*/
-  document.addEventListener("click", function (e) {
-      closeAllLists(e.target);
-  });
-}
-
-const aL = ${actorList};
-const dL = ${directorList};
-const tL = ${titleList};
-console.log(aL);
-console.log(dL);
-console.log(tL);
-const champ = [];
-for(var i = 0; i < aL.length ;i++ ){
-let val = aL[i]["value"];
-let key = aL[i]["key"];
-let sub = val.substring(1, val.length -1);
-
-champ.push(sub.concat(' ','actor', ' ', key));
-}
-for(var i = 0; i < dL.length ;i++ ){
-let val = dL[i]["value"];
-let key = dL[i]["key"];
-let sub = val.substring(1, val.length -1);
-
-champ.push(sub.concat(' ','director', ' ', key));
-}
-for(var i = 0; i < tL.length ; i++){
-let val = tL[i]["name"];
-let idw = tL[i]["id"];
-let id = idw.substring(1, idw.length -1);
-let sub = val.substring(1, val.length -1);
-champ.push(sub.concat(' ','title', ' ', id));
-}
-
-/*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
-autocomplete(document.getElementById("myInput"), champ);
-</script>
     
+   <script src = "<c:url value = "/js/jquery-1.9.1.js"/>"></script>
+       <script src = "<c:url value = "/js/jquery-ui.min.js"/>"></script>
+       <script src = "<c:url value = "/js/jquery-ui.js"/>"></script>
+     <script type="text/javascript">
+    $(document).ready(function() {
+      $('#myInput').autocomplete({
+        source : '${pageContext.request.contextPath }/instant'
+      });
+    });
+  </script>
     
   </header>
   
-  <!-- ===================================== header ===================================== -->
+<!-- ===================================== header ===================================== -->
   
   
   <!-- ===================================== contents ===================================== -->
 
-<c:forEach items="${poster}" var="genre">
-  <div class="content_wrapper">
-  
-  <tr>${genre.key}</tr>
-    <c:forEach items="${genre.value}" var = "tranche">
-    
-    <br><c:set value = "sixieme_?want=${tranche.getId().substring(1, 10)}" var = "href"/>
-    <a href = ${href}><image src = ${tranche.getPoster()} alt = "image" sizes="(min-width: 600px) 200px, 50vw" ></a>
-    <br>${tranche.getName()}
-    <br>${tranche.getRating()}
-    <br>${tranche.getYear()}
-    <br>
-    
-    
-      <table>
-      <c:set value = "${pageContext.request.contextPath}/sixieme_?want=${movieInfo.getId().substring(1, 10)}" var = "href"/>
-      <a href = ${href} >
-      <image src = ${movieInfo.getPoster()} alt = "image" sizes="(min-width: 600px) 200px, 50vw">
-      </a>
-      <tr>${movieInfo.getName()}</tr>
-      <tr>${movieInfo.getRating()}</tr>
-      <tr>${movieInfo.getYear()}</tr>
-      <tr>${movieInfo.getReleased()}</tr>
-      <tr>${movieInfo.getRuntime()}</tr>
-      <tr>${movieInfo.getPlot()}</tr>
-      <tr>${movieInfo.getCountry()}</tr>
-      <tr>
-      <c:forEach items = "${aC}" var = "ac"><td>${ac.getValue()}</td>
-      </c:forEach>
-      </tr>
-      <tr>
-      <c:forEach items = "${dC}" var = "dc"><td>${dc.getValue()}</td></c:forEach>
-      </tr>
-       <tr>
-      <c:forEach items = "${gC}" var = "dc"><td>${gc.getValue()}</td></c:forEach>
-      </tr>
-      </table>
-      </body>
-      
-      <tbody>
-        <c:set value = "${pageContext.request.contextPath}/huitieme_?title=${want}&bool=${ouNon}&user=${userId}" var = "likeref"/>  
-        <form action = ${likeref} method = "post"  >
-        <input type="submit" id="myButton" value = "${lon}">
-        </form>
-        
-        <p1><a href = "${pageContext.request.contextPath}/deuxieme_?req=${userId}">return to search</a></p1>
-      </tbody>
-    </c:forEach> 
-  </div>
-</c:forEach>
+		<div class="content_body">
+			<div class="content_wrapper">
+			    <div class="top_box">
+					<div class="c_box_s"></div>
+					<div class="movie_info">MOVIE INFO</div>
+					<div class="c_box_l"></div>
+				</div>
+				<div class="mov_info">
+					<div class="poster_img">
+						<img class="img" src=${movieInfo.getPoster()}>
+					</div>
+					<div class="info_detail">
+						<div class="mov_title">${movieInfo.getName()}
+						</div>
+						<div class="r_date">
+							<span class="info_left">Release Date :</span> 
+							<span class="info_right">${movieInfo.getReleased()}</span>
+						</div>
+						<div class="director">
+							<div class="info_block">
+								<span class="info_left">Director :</span>
+								<c:forEach items="${dC}" var="dc">
+								<span class="info_right">${dc.getValue()}</span>
+								</c:forEach>
+							</div>	
+						</div>
+						<div class="actor">
+							<span class="info_left">Actor :</span>
+							<div class="info_block">
+								<c:forEach items="${aC}" var="ac">
+								<span class="info_right">${ac.getValue()}</span>
+								</c:forEach>
+							</div>
+						</div>
+						<div class="ratings">
+							<span class="info_left">Ratings :</span> <span class="info_right">
+							<img class="staricon" src="https://github.com/hykim-king/NORAJO/blob/main/NORAJO/target/redstar.png?raw=true" alt="Red Star">${movieInfo.getRating()}</span>
+						</div>
+						<div class="genre">
+							<div class="info_block">
+								<span class="info_left">Genre :</span>
+								<c:forEach items="${gC}" var="gc">	
+								<span class="info_right">${gc.getValue()}</span>
+							</c:forEach>
+							</div>
+						</div>
+						<div class="country">
+							<span class="info_left">Country :</span> <span class="info_right">${movieInfo.getCountry()}</span>
+						</div>
+						<div class="runtime">
+							<span class="info_left">Runtime :</span> <span class="info_right">${movieInfo.getRuntime()}</span>
+						</div>
+					</div>
+				</div>
+				<div class="movie_summary">
+						<div class="mov_summary_title">SUMMARY</div>
+						<div class="movie_summary_item">${movieInfo.getPlot()}</div>
+					</div>
+					
+					<div class="like">
+						<c:set value="${pageContext.request.contextPath}/huitieme_?title=${want}&bool=${ouNon}&user=${userId}" var="likeref" />
+						<form action=${likeref } method="post">
+						  <input type="submit" id="myButton" value="Like it?">
+						  <img class="likeheart" src="${lon}">
+					    </form>
+					</div>
+			</div>
+		</div>
+<!-- ===================================== contents ===================================== -->
+<!-- ===================================== footer ===================================== -->
 
-  <div class="content_body">.
-    <div class="content_wrapper">
-      
-      <div class="c_box_sl">
-        <div class="c_box_s"></div>
-          <div class="mov_info">MOVIE INFO</div>
-        <div class="c_box_l"></div>
-      </div>
-    
-      <div class="poster_img">
-        <img src=${movieInfo.getPoster()}>
-      </div>
-      
-      <div class="mov_title">${movieInfo.getName()}</div>
-      
-      <table class="info_detail_1">
-        <tr class="r_date">
-          <td>Release Date</td>
-          <td>&nbsp;&nbsp;:&nbsp;</td> 
-        </tr>
-        <tr class="director">
-          <td>Director</td>
-          <td>&nbsp;&nbsp;:&nbsp;</td>  
-        </tr>
-        <tr class="actor">
-          <td>Actor</td>
-          <td>&nbsp;&nbsp;:&nbsp;</td>  
-        </tr>
-        <tr class="ratings">
-          <td>Ratings</td>
-          <td>&nbsp;&nbsp;:&nbsp;</td> 
-        </tr>
-        <tr class="genre">
-          <td>Genre</td>
-          <td>&nbsp;&nbsp;:&nbsp;</td> 
-        </tr>
-        <tr class="country">
-          <td>Country</td>
-          <td>&nbsp;&nbsp;:&nbsp;</td> 
-        </tr>
-        <tr class="runtime">
-          <td>Runtime</td>
-          <td>&nbsp;&nbsp;:&nbsp;</td> 
-        </tr>
-      </table>
-      
-      <table class="info_detail_2">
-        <tr class="r_date">
-          <td>${movieInfo.getReleased()}</td>
-        </tr>
-        <tr class="director">
-        
-          <c:forEach items = "${dC}" var = "dc">
-          <td>${dc.getValue()}</td>  </c:forEach>
-        </tr>
-
-        </tr>
-        <tr class="actor">
-          
-          <c:forEach items = "${aC}" var = "ac">
-          <td>${ac.getValue()}</td>  </c:forEach>
-        </tr>
-
-        </tr>
-        <tr class="ratings">
-          <td><img class="staricon" src ="https://github.com/hykim-king/NORAJO/blob/main/NORAJO/src/main/webapp/resources/img/redstar.png?raw=true"  alt="Red Star">${movieInfo.getRating()}</td>
-        </tr>
-        <tr class="genre">
-            
-          <c:forEach items = "${gC}" var = "gc">
-          <td>${gc.getValue()}</td>  </c:forEach>
-        </tr>
-
-        </tr>
-        <tr class="country">
-          <td>${movieInfo.getCountry()}</td>
-        </tr>
-        <tr class="runtime">
-          <td>${movieInfo.getRuntime()}</td>
-        </tr>
-      </table>
-      
-      
-      
-      <div class="movie_summary">SUMMARY</div>
-        <div class="movie_summary_item">${movieInfo.getPlot()}</div>
-    </div>
-
-    
-  </div>
-  <!-- ===================================== contents ===================================== -->
-  
-  <!-- ===================================== footer ===================================== -->
   <footer>
     <div class="footer-wrapper">
       <div class="project">
-        <p class="lnb">PROJECT NORAJO</p>
-          <p class="btb">Jin Seo Kim</p>
-          <p class="btb">Hyun Woo Ko</p>
-          <p class="btb">Bo Seong Gwon</p>
-          <p class="btb">Bo Sun Kim</p>
-          <p class="btb">Chae Lynn Yoo</p>
+        <p class="lnb" style="font-size: 18px">PROJECT NORAJO</p>
+          <p class="btb" style="font-size: 12px">Jin Seo Kim</p>
+          <p class="btb" style="font-size: 12px">Hyun Woo Ko</p>
+          <p class="btb" style="font-size: 12px">Bo Seong Gwon</p>
+          <p class="btb" style="font-size: 12px">Bo Sun Kim</p>
+          <p class="btb" style="font-size: 12px">Chae Lynn Yoo</p>
       </div>
     
       <div class="front-end">
-        <p class="lnb">FRONT END</p>
-          <p class="btb">JAVASCRIPT</p>
-          <p class="btb">HTML</p>
-          <p class="btb">CSS</p>
-          <p class="btb">jQEURY</p>
+        <p class="lnb" style="font-size: 18px">FRONT END</p>
+          <p class="btb" style="font-size: 12px">JAVASCRIPT</p>
+          <p class="btb" style="font-size: 12px">HTML</p>
+          <p class="btb" style="font-size: 12px">CSS</p>
+          <p class="btb" style="font-size: 12px">JQEURY</p>
       </div>
       
       <div class="was-data">
-        <p class="lnb">WAS/DATABASE</p>
-          <p class="btb">Apache Tomcat</p>
-          <p class="btb">ORACLE SQL DEVELOPER</p>
+        <p class="lnb" style="font-size: 18px">WAS/DATABASE</p>
+          <p class="btb" style="font-size: 12px">Apache Tomcat</p>
+          <p class="btb" style="font-size: 12px">ORACLE SQL DEVELOPER</p>
       </div>  
       
       <div class="back-end">
-        <p class="lnb">BACK END</p>
-          <p class="btb">SPRING</p>
-          <p class="btb">JAVA</p>
-          <p class="btb">MyBatis</p>
-      </div>  
-      
-      <div class="etc">
-        <p class="lnb">ETC</p>
-          <p class="btb">Slack</p>
-          <p class="btb">Github</p>
-          <p class="btb">Zoom</p>
-          <p class="btb">KakaoTalk</p>
+        <p class="lnb" style="font-size: 18px">BACK END</p>
+          <p class="btb" style="font-size: 12px">SPRING</p>
+          <p class="btb" style="font-size: 12px">JAVA</p>
       </div>  
       
       <div class="contact-line">
         <p class="lnb" style="font-size: 18px">CONTACT</p>
-          <p class="btb">E-Mail : korea@norajo.com</p>
-          <p class="btb">Address : 53, Yangsan-ro, Yeongdeungpo-gu, Seoul, Republic of Korea</p>
-          <p class="btb">Copyright © 2021 NORAJO Corp. All rights reserved.</p>
+          <p class="btb" style="font-size: 12px">E-Mail : korea@norajo.com</p>
+          <p class="btb" style="font-size: 12px">Address : 53, Yangsan-ro, Yeongdeungpo-gu, Seoul, Republic of Korea</p>
+          <p class="btb" style="font-size: 12px">Copyright © 2021 NORAJO Corp. All rights reserved.</p>
       </div>  
     </div>
   </footer>
   
-</div>
-  <!-- ===================================== footer ===================================== -->
-
+<!-- ===================================== footer ===================================== -->
 </body>
 </html>

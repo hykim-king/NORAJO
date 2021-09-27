@@ -31,8 +31,11 @@ this.cT = cT;
 public List<aFaire> aF(){
 return cT.insTant();
 }
-public List<titre> mapPoster(int compte ){
-return cT.tranche(compte);
+public String mapPoster(int compte ) throws Exception{
+List<titre> movieInfo = cT.tranche(compte);
+ObjectMapper objectMapper = new ObjectMapper();
+String mI = objectMapper.writeValueAsString(movieInfo);
+return mI;
 }
 public int countGenre(){
 return cT.compte();
@@ -68,7 +71,20 @@ public HashSet<Integer> singleInt(String ligne){
 return cT.tupIntBySt_(ligne);
 }
 public plusTitre movieDetail(String imdbId){
-return cT.nonTranche(imdbId);
+plusTitre pT = new plusTitre();
+String conte = cT.couper(imdbId.substring(1, imdbId.length()-1));
+plusTitre faute = cT.nonTranche(imdbId);
+pT.setId(faute.getId());
+pT.setName(faute.getName());
+pT.setRating(faute.getRating());
+pT.setYear(faute.getYear());
+pT.setReleased(faute.getReleased());
+pT.setRuntime(faute.getRuntime());
+pT.setPlot(conte);
+pT.setCountry(faute.getCountry());
+pT.setPoster(faute.getPoster());
+
+return pT;
 }
 public List<plusTitre> timeDetail (int compte){
 return cT.chronologie(compte);
@@ -132,6 +148,53 @@ public String directorJason() throws Exception{
 	String dC = objectMapper.writeValueAsString(dirContainer);
 	return dC;	
 }
+public List<String> melanger(String pref)  {
+    List<cle> actContainer = cT.assimileAct(pref);
+    List<cle> dirContainer = cT.assimileDir(pref);
+    List<tirer> titContainer = cT.assimileTit(pref);
+    List<String> micro = new ArrayList<>();
+    for(cle morceaux : actContainer ){
+       StringBuilder sb = new StringBuilder();
+       String mx = morceaux.getValue();
+       int mxL = mx.length();
+       sb.append(mx.substring(1, mxL-1 ));
+       sb.append(" actor");
+       sb.append(" ");
+       sb.append(morceaux.getKey());
+       micro.add(sb.toString());
+       
+       }
+     for(cle morceaux : dirContainer ){
+        
+       StringBuilder sb = new StringBuilder();
+       String mx = morceaux.getValue();
+       int mxL = mx.length();
+       sb.append(mx.substring(1, mxL-1 ));
+       sb.append(" actor");
+       sb.append(" ");
+       sb.append(morceaux.getKey());
+       micro.add(sb.toString());
+ 
+       }
+     for(tirer morceaux : titContainer ){
+        
+       StringBuilder sb = new StringBuilder();
+       String mx = morceaux.getName();
+       int mxL = mx.length();
+       String mc = morceaux.getId();
+       int mcL = mc.length();
+       sb.append(mx.substring(1, mxL-1 ));
+       sb.append(" title");
+       sb.append(" ");
+       sb.append(mc.substring(1, mcL-1));
+       micro.add(sb.toString());
+ 
+       }
+    //   ObjectMapper objectMapper = new ObjectMapper();
+     //  String vitesse = objectMapper.writeValueAsString(micro);
+      return micro;
+
+    }
 
 
 }

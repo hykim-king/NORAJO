@@ -15,7 +15,7 @@ import com.example.access.dir.userPlus;
 
 public interface interne {
 List<aFaire> aF();
-List<titre> mapPoster(int compt);
+String mapPoster(int compte ) throws Exception;
 int countGenre();
 int countActor();
 int countDirector();
@@ -36,5 +36,5 @@ List<userPlus> pwFind(userPlus uP);
 String titleJason() throws Exception;
 String actorJason() throws Exception;
 String directorJason() throws Exception;
-
+List<String> melanger(String pref) throws Exception;
 }

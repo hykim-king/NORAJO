@@ -61,6 +61,9 @@ body {
 
 
 </style>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="https://github.com/notlelis/img-url/blob/main/favicon1.png?raw=true">
+<title>NORAJO</title>
 	<body>
 		<form:form action="${pageContext.request.contextPath}/loginAuth" modelAttribute="userBasic" method='post'>
 		    <div class="inner">        

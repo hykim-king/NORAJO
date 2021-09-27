@@ -2,6 +2,7 @@ package com.example.access.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -46,23 +47,20 @@ this.sV=sV;
     public String imprimer (@RequestParam(required = false) String req,Model model) throws Exception{
 String href = new String();
 String h_ref = new String();
-String log_ref = new String();
-String log_id = new String();
-String sign_ref = new String();
-String sign_id = new String();
+String a_key = new String();
+String a_ref = new String();
+String c_key = new String();
+String c_ref = new String();
 if(req == null){
 href = "";
 h_ref = "";
-log_ref = "login";
-log_id = "LOGIN";
-sign_ref = "signup";
-sign_id = "SIGN UP";
+a_key = "LOGIN";
+a_ref = "login";
+c_key = "SIGN UP";
+c_ref = "signup";
+
 }
 else{
-	log_ref = "deuxieme_";
-	log_id = "LOGOUT";	
-	sign_ref = "";
-	sign_id = "ACCOUNT";
 StringBuilder sb = new StringBuilder();
 sb.append("&req=");
 sb.append(req);
@@ -71,46 +69,71 @@ StringBuilder sb_ = new StringBuilder();
 sb_.append("/");
 sb_.append(req);
 h_ref = sb_.toString();
+a_key = "LOGOUT";
+a_ref = "deuxieme_";
+c_key = "ACCOUNT";
+c_ref = "account";
+
 }
 int bas = 0;
 int count = sV.countGenre();
-Map<String, List<titre>> cart = new HashMap<>();
+Map<String, cle > cart = new HashMap<>();
 while(bas< count){
-List<titre> poster = new ArrayList<>();
-String unique = new String();
-String uq = sV.nameExtract(bas);
-unique = uq.substring(1, uq.length()-1);
-poster = sV.mapPoster(bas);
-cart.put(unique, poster);
+cle tag = new cle();
+String faute = new String();
+StringBuilder sb = new StringBuilder();
+faute = sV.nameExtract(bas);
+if (faute.equals("\"N/A\"")){
+faute = "\"NaN\"";
+}
+String unique = faute.substring(1, faute.length()-1); 
+sb.append("#");
+sb.append(unique);
+
+tag.setKey(bas);
+tag.setValue(sb.toString());
+//poster = sV.mapPoster(bas);
+cart.put(unique, tag);
 bas += 1;
 }
-TreeMap<String, List<titre>> sort = new TreeMap<>(cart);
+TreeMap<String, cle> sort = new TreeMap<>(cart);
 
 List<carte> rankList  = new ArrayList<>();
  
-for (Map.Entry<String, List<titre>> element : cart.entrySet()){
-carte ct = new carte();
-ct.setGenre(element.getKey());
-ct.setRank(element.getValue());
-rankList.add(ct);
+//for (Map.Entry<String, List<titre>> element : cart.entrySet()){
+//carte ct = new carte();
+//ct.setGenre(element.getKey());
+//ct.setRank(element.getValue());
+//rankList.add(ct);
 
-}
+//}
 //horizontal
-model.addAttribute("sign_i", sign_id);
-model.addAttribute("sign", sign_ref);
-model.addAttribute("log_i", log_id);
-model.addAttribute("log", log_ref);
+model.addAttribute("ak", a_key);
+model.addAttribute("ar", a_ref);
+model.addAttribute("ck", c_key);
+model.addAttribute("cr", c_ref);
+
 model.addAttribute("rq", h_ref);
 model.addAttribute("req", href);
 model.addAttribute("poster", sort);
 //haute
-model.addAttribute("actorList", sV.actorJason());
-model.addAttribute("directorList", sV.directorJason());
-model.addAttribute("titleList", sV.titleJason());
 //bas
 
 return "deuxieme_";
 }
-
+@GetMapping("/instant")
+@ResponseBody List<String> communiquer(@RequestParam  String term) throws Exception{
+List<String> result =  sV.melanger(term);
+return result;
+}
+@GetMapping("/genre/{id}")
+@ResponseBody String avec(@PathVariable("id") int id)throws Exception{
+return sV.mapPoster(id);
+}
+@GetMapping("/account")
+@ResponseBody String mesInfo(){
+String result =  "we are reparing this service at a moment";
+return result;
+}
 
 }

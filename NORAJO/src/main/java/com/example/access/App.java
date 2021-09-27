@@ -24,6 +24,7 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 public class App extends SpringBootServletInitializer {
 
 @Override  
+
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder){
 return builder.sources(App.class);
 
@@ -35,4 +36,3 @@ return builder.sources(App.class);
     }
 
 }
-

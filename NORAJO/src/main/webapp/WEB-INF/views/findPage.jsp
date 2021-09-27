@@ -12,36 +12,55 @@ body {
     text-decoration: none;
     font-size: 14px;
     color: white;
+    height: 100%;
+    
+}
+
+#header {
+    padding-top: 62px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.logo{
+    text-align: center;
+    width: 50px;
+    height: 100px;
 }
 
 .find_inner {
-    position: absolute;
+    display: flex;
     left: 50%;
-    top: 40%;
-    margin: -145px 0 0 -160px;
+    top: 50%;
+    margin: 77px 0 0 -183px;
 }
 
 .find_inner_inner {
-    position: relative;
-    width: 320px;
+    
+    width: 350px;
     margin: 0 auto;
 }
 
 fieldset {
     border: 0;
+    width : 500px;
 }
 
 
 /* Contents */
 h3 {
     margin-bottom: 10px;
-    font-family: 'Oswald',sans-serif;
-    font-size: 20px;
+    font-size: 23px;
     text-align: left;
 }
 
+label {
+	font-size: 18px;
+}
+
 .inp_box  {    
-    margin-bottom: 10px;
+    margin: 20px 0 20px 0;
+    display: block;
 }
 
 .set {
@@ -50,7 +69,8 @@ h3 {
 
 
 .box {
-    width: 83%;
+	margin-left: 12px;
+	width: 83%;
     height: 40px;
     border: solid 2px #363636;
     border-radius: 2px;
@@ -62,7 +82,7 @@ h3 {
 }
 
 .box_email01 {
-    width: 37%;
+    width: 195.5px;
     height: 40px;
     border: solid 2px #363636;
     border-radius: 2px;
@@ -74,7 +94,7 @@ h3 {
 }
 
 .box_email02 {
-    width: 37%;
+    width: 195.5px;
     height: 40px;
     border: solid 2px #363636;
     border-radius: 2px;
@@ -91,30 +111,51 @@ h3 {
     text-align: center;
 }
 
+.all_title {
+	width: 20px;
+	border: red;
+}
+
 
 /* Button */
-.btn_find {
-    width: 288px;
-    height: 40px;
+#btn_join {
+	margin: 10px 0 15px 0;
+    width: 94%;
+    height: 50px;
     background: #363636;
     color: white;
-    font-family: 'Oswald',sans-serif;
-    font-size: 15px;
     border: none;
+    font-size: 18px;
+    border-radius: 8px;
 }
 
-.btn_find:hover {
-	 background: red;
+#btn_join:hover {
+	background: #BA0003;
+    transition: 0.5s;
 }
+
 
 </style>
 <meta charset="UTF-8">
-<title>?뚯썝?뺣낫 李얘린 ?섏씠吏</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="https://github.com/notlelis/img-url/blob/main/favicon1.png?raw=true">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+<title>NORAJO</title>
 <script type="text/javascript">
 
 </script>
 </head>
 <body>
+
+	<!-- header -->
+	
+    <div id = "header">
+        <a href="http://localhost:8080/hikari_web/deuxieme_" title="메인 페이지로 돌아가기">
+          <img class="logo" src="https://github.com/chaelynn1028/PCWK_MARKDOWN/blob/main/logowhite.png?raw=true" alt="logo">
+        </a>    
+    </div>
+    
     
     <div class="find_inner">
         <div class="find_inner_inner">
@@ -130,7 +171,7 @@ h3 {
                 <!-- Name input-->
                 <div class="inp_box">
                     <div style="display: inline-block;" class="title">
-                        <form:label path="name" for="box_name" >Name</form:label>
+                        <form:label path="name" for="box_name" ><span class="all_title">Name</span></form:label>
                     </div>
                     <form:input path="name" type="text" class="box" id="box_name" name="box_name" maxlength="30"/>
                 </div>
@@ -140,7 +181,7 @@ h3 {
                 
                 <!-- email input-->
                 <div class="inp_box">
-                    <form:label path="pref" for="box_email01" class="title_email">e-Mail</form:label>
+                    <form:label path="pref" for="box_email01" class="title_email"><span class="all_title">e-Mail</span></form:label>
                     <span class="email_box">
                     <form:input path="pref" type="text" class="box_email01" id="box_email01" maxlength="48"/>
                     <span>@</span>
@@ -174,7 +215,7 @@ h3 {
                 <!-- Id input -->
                 <div class="inp_box">
                     <div style="display: inline-block;" class="title">
-                        <form:label for="box_id" path="nick">ID</form:label>
+                        <form:label for="box_id" path="nick"><span class="all_title">ID</span></form:label>
                     </div>
                     <form:input path="nick" type="text" class="box" id="box_id" name="box_id" maxlength="30"/>
                 </div>
@@ -182,7 +223,7 @@ h3 {
                 
                 <!-- email input -->
                 <div class="inp_box">
-                    <form:label  path="pref" for="box_email02" class="title_email">e-Mail</form:label>
+                    <form:label  path="pref" for="box_email02" class="title_email"><span class="all_title">e-Mail</span></form:label>
                      <span class="email_box">
                     <form:input path="pref" type="text" class="box_email02"  id="box_email02" maxlength="48"/>
                     <span>@</span>

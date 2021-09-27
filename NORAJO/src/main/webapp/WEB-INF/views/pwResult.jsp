@@ -73,7 +73,8 @@ hr {
 
 </style>
 <meta charset="UTF-8">
-<title>비밀번호 찾기 결과 페이지</title>
+<link rel="icon" type="image/x-icon" href="https://github.com/notlelis/img-url/blob/main/favicon1.png?raw=true">
+<title>NORAJO</title>
 </head>
 <body>
     <div class="inner">        

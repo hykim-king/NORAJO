@@ -24,6 +24,7 @@ import org.springframework.jdbc.core.RowMapper;
 
 import com.example.access.dir.aFaire;
 import com.example.access.dir.titre;
+import com.example.access.dir.tirer;
 import com.example.access.dir.plusTitre;
 import com.example.access.dir.cle;
 import com.example.access.dir.userFavor;
@@ -169,26 +170,29 @@ return count;
 public List<titre>tranche (int compte){
 String dEcl = new String();
 StringBuilder sb = new StringBuilder();
-sb.append("SELECT tlst.title_name title_tranche, tlst.title_poster poster,");
-sb.append("kzgm.genre_id genre_tranche,tlst.title_rating rating,");
-sb.append( " tlst.title_year year_tranche, tlst.title_id ttid"); 
-sb.append(" FROM title_list tlst, kreuz_gm kzgm WHERE tlst.title_id = kzgm.title_id ");
-sb.append("ORDER BY tlst.title_rating DESC, tlst.title_year DESC,  kzgm.genre_id ASC");
+sb.append("SELECT tlst.title_name title_tranche, tlst.title_poster poster,"          );
+sb.append("tlst.title_rating rating,"												 );
+sb.append( " tlst.title_year year_tranche, tlst.title_id ttid"                       ); 
+sb.append(" FROM title_list tlst, kreuz_gm kzgm WHERE tlst.title_id = kzgm.title_id" );
+sb.append(" AND kzgm.genre_id ="      											     );
+sb.append(compte																	 );
+sb.append(" ORDER BY tlst.title_rating DESC, tlst.title_year DESC"					 );
+sb.append(" fetch first 5 rows only"												 );
 dEcl = sb.toString();
 return jdbcTemplate.query(dEcl, new ResultSetExtractor <List<titre>>(){
 @Override
 public List<titre>extractData(ResultSet rs) throws SQLException, DataAccessException{
 List<titre> titleList = new ArrayList<>();
 while(rs.next()){ 
-if(rs.getInt("genre_tranche") == compte){
+
       titre title = new titre();
       title.setId(rs.getString("ttid"));
       title.setName(rs.getString("title_tranche"));
       title.setPoster(rs.getString("poster"));
       title.setRating(rs.getFloat("rating"));
-      title.setYear(rs.getDouble("year_tranche"));
+      title.setYear(rs.getInt("year_tranche"));
       titleList.add(title);
-      }
+      
     }
 //while next
 return titleList;
@@ -694,6 +698,121 @@ public List<userPlus> trouverPw(userPlus uP){
     }
     });
 } 
+
+public List<cle> assimileAct(String pref){
+ StringBuilder sb = new StringBuilder();
+ sb.append("\"");
+ sb.append(pref.substring(0,1).toUpperCase());
+ sb.append(pref.substring(1, pref.length()));
+ sb.append("%");
+ String dEcl = new String();
+        StringBuilder sb_ = new StringBuilder();
+        sb_.append("SELECT actor_id, actor_name");
+        sb_.append(" FROM actor_list");
+        sb_.append(" WHERE actor_name like '");
+        sb_.append(sb.toString());
+        sb_.append("'");
+        dEcl = sb_.toString();
+
+
+ return jdbcTemplate.query(dEcl,new RowMapper<cle>(){
+    @Override
+    public cle mapRow(ResultSet rs, int rownumber) throws SQLException {
+        cle chaine  =new cle();
+        chaine.setKey(rs.getInt(1));
+        chaine.setValue(rs.getString(2));
+        return chaine;
+    }
+    });
+}
+public List<cle> assimileDir(String pref){
+ StringBuilder sb = new StringBuilder();
+ sb.append("\"");
+ sb.append(pref.substring(0,1).toUpperCase());
+ sb.append(pref.substring(1, pref.length()));
+ sb.append("%");
+ String dEcl = new String();
+        StringBuilder sb_ = new StringBuilder();
+        sb_.append("SELECT director_id, director_name");
+        sb_.append(" FROM director_list");
+        sb_.append(" WHERE director_name like '");
+        sb_.append(sb.toString());
+        sb_.append("'");
+        dEcl = sb_.toString();
+
+
+ return jdbcTemplate.query(dEcl,new RowMapper<cle>(){
+    @Override
+    public cle mapRow(ResultSet rs, int rownumber) throws SQLException {
+        cle chaine  =new cle();
+        chaine.setKey(rs.getInt(1));
+        chaine.setValue(rs.getString(2));
+        return chaine;
+    }
+    });
+}
+
+public List<tirer> assimileTit(String pref){
+ StringBuilder sb = new StringBuilder();
+ sb.append("\"");
+ sb.append(pref.substring(0,1).toUpperCase());
+ sb.append(pref.substring(1, pref.length()));
+ sb.append("%");
+ String dEcl = new String();
+        StringBuilder sb_ = new StringBuilder();
+        sb_.append("SELECT title_id, title_name");
+        sb_.append(" FROM title_list");
+        sb_.append(" WHERE title_name like '");
+        sb_.append(sb.toString());
+        sb_.append("'");
+        dEcl = sb_.toString();
+
+
+ return jdbcTemplate.query(dEcl,new RowMapper<tirer>(){
+    @Override
+    public tirer mapRow(ResultSet rs, int rownumber) throws SQLException {
+        tirer chaine  =new tirer();
+        chaine.setId(rs.getString(1));
+        chaine.setName(rs.getString(2));
+        return chaine;
+    }
+    });
+}
+public String couper (String imdbId){
+ String dEcl = new String();
+ StringBuilder sb = new StringBuilder();
+ sb.append("select json_value(po_document, '$.Plot') plot");
+ sb.append(" from an_schaffung where");
+ sb.append(" json_value(po_document, '$.imdbID') ='");
+ sb.append(imdbId);
+ sb.append("'");
+ dEcl = sb.toString();
+return jdbcTemplate.query(dEcl, new ResultSetExtractor <String>(){
+@Override
+public String extractData(ResultSet rs) throws SQLException, DataAccessException{
+
+List<String> plt = new ArrayList<>();
+while(rs.next()){
+String rst = rs.getString("plot");
+plt.add(rst);;
+//while
+}
+	if(plt.isEmpty()==true){
+	return "";
+	}
+	else{
+	return plt.get(0);
+	}
+
+//extractor
+}
+//query
+});
+//fin
+}
+
+
+
 
 
 }

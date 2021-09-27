@@ -12,12 +12,13 @@ html {
 }
 
 body {
-	margin: 0;
-    height: 100%;
-	background: black;
-	text-decoration: none;
-	font-size: 14px;
-	color: white;
+  margin: 0;
+  height: 100%;
+  background: black;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 
@@ -65,6 +66,10 @@ h3 {
     color: black;    
 }
 
+.email_box {
+    width: 100%;  
+}
+
 .pw {
     display: block;
     width: 100%;
@@ -78,13 +83,10 @@ h3 {
     color: black;    
 }
 
-.email_box {
-    width: 100%;  
-}
 
 #email {
-    display: table-cell;
-    width: 217px;
+    display: inline-block;
+    width: 213px;
     height: 40px;
     border: solid 2px #363636;
     border-radius: 4px;
@@ -96,8 +98,8 @@ h3 {
 }
 
 #domain {
-    display: table-cell;
-    width: 217px;
+    display: inline-block;
+    width: 224.5px;
     height: 40px;
     border: solid 2px #363636;
     border-radius: 4px;
@@ -121,34 +123,53 @@ h3 {
     height: 50px;
     border: 0;
     color: white;
-    font-size: 15px;
+    font-size: 18px;
     cursor: pointer;
     background-color: #363636;
     font-size: 400;
+    border-radius: 8px;
 }
 
 #btn_join:hover {
-    background: red;
+    background-color: #BA0003;
+    transition: 0.5s;
 }
 
 .under_btn {
-    font-size: 12px;
+    font-size: 15px;
     display: block;
     position: relative;
     top: -80px;
     margin: 0;
     width: 100%;
     height: 50px;
+    border: none;
 }
 
-#btn_already {
+#btn_append {
     float: left; 
 }
 
+a {
+	color: #B6B6B6;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+a:hover {
+	color: white;
+	transition : 0.5s;
+}
 
 </style>
 <meta charset="UTF-8">
-<title>회원가입 페이지</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="https://github.com/notlelis/img-url/blob/main/favicon1.png?raw=true">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+<title>NORAJO</title>
 </head>
 <body>
 
@@ -156,8 +177,8 @@ h3 {
     <!-- header -->
     <!-- !!로고 이미지 안나옴 -->
     <div id = "header">
-        <a href="main_page_url" title="메인 페이지로 돌아가기">
-        	<img class="logo" src="https://github.com/chaelynn1028/PCWK_MARKDOWN/blob/main/logowhite.png?raw=true" alt="logo">
+        <a href="http://localhost:8080/hikari_web/deuxieme_" title="메인 페이지로 돌아가기">
+          <img class="logo" src="https://github.com/chaelynn1028/PCWK_MARKDOWN/blob/main/logowhite.png?raw=true" alt="logo">
         </a>    
     </div>
     
@@ -211,7 +232,7 @@ h3 {
         </div>
         
         <script>
-		//비밀번호 재확인 일치 불일치 확인
+    //비밀번호 재확인 일치 불일치 확인
     $('.pw').focusout(function () {
         var pwd1 = $("#password_1").val();
         var pwd2 = $("#password_2").val();
@@ -253,7 +274,7 @@ h3 {
                 <form:label path="pref">Email</form:label> 
             </h3>
             <span class="email_box">
-              <form:input type="text" path="pref"  class="box" maxlength="48" required="required"/>
+              <form:input type="text" id="email" path="pref"  class="box" maxlength="48" required="required"/>
               
                 <span>@</span>
                   <form:input  path="suf"  id="domain" name="domain" list="domains" placeholder="Enter/select domain" required="required"/>
@@ -264,33 +285,37 @@ h3 {
                         <option value="daum.com">                     
                     </datalist> 
             </span>
-            <span class="error_next_box"></span>
         </div>
         
         
         <!-- Join Button -->
         <div class="btn_join">
-            <input type="submit" id="btn_join" value = "signup" />
-        
-                <span>
-                CREATE YOUR ACCOUNT
-                </span>
-                
-            </button>
+            <input type="submit" id="btn_join" name="join" value = "CREATE YOUR ACCOUNT" />            
+            </button>         
         </div>
         
-        <div class="under_btn">      
         
+        <div class="under_btn">             
         <!-- Already have an account? -->
-        <div id="btn_already" style="display: inline-block;">
+        <div id="btn_append">
             <label for="already">Already have an account?</label>
             <span class="login_here">
-                <a href="http://localhost:8080/hikari_web/login">LOG IN HERE</a>
+                <a href="http://localhost:8080/hikari_web/login">&nbsp;LOG IN HERE</a>
             </span>
-        </div> 
+        </div>
+        <br>
+        <div id="btn_append">
+            <label for="find">Forgot ID or password?</label>
+            <span class="find_here">
+                <a href="http://localhost:8080/hikari_web/trouver">&nbsp;FIND IN HERE</a>
+            </span>
+        </div>
+        
+       
+         
         </div>
              
-	</form:form>  
+  </form:form>  
     </div>           
     </div>
 

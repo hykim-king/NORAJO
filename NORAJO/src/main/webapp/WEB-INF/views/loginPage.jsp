@@ -28,6 +28,8 @@
     text-align: center;
 }
 
+body{font-family: 'Roboto Condensed', sans-serif;}
+
 .logo{
     text-align: center;
     width: 50px;
@@ -55,7 +57,7 @@ input {
 	-webkit-rtl-ordering: logical;
 	cursor: text;
 	margin: 0em;
-	font: 400 13.3333px Arial;
+	font: 400 13.3333px;
 	padding: 1px 0px;
 	border-width: 2px;
 	border-style: solid;
@@ -86,14 +88,14 @@ input {
 }
 
 body{
-    font-size: 13px;
+    font-size: 18px;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     background: black;
 }
 
 button, input {
-	font-size: 13px;
+	font-size: 18px;
 	line-height: 1.5;
 	color: white;
 	-webkit-font-smoothing: antialiased;
@@ -116,7 +118,7 @@ fieldset, img {
 	position: relative;
 	width: 100%;
 	margin: 0;
-	padding: 18px 19px 19px;
+	padding: 15px 19px 15px;
 	box-sizing: border-box;
 	color: black;
 }
@@ -129,7 +131,7 @@ fieldset, img {
 	display: block;
 	width: 100%;
 	height: 100%;
-	font-size: 14px;
+	font-size: 18px;
 	color: black;
 	border: none;
 	outline: 0;
@@ -141,19 +143,22 @@ fieldset, img {
 	margin: 20px 0 0;
 	width: 100%;
 	height: 48px;
-	font-size: 16px;
+	font-size: 18px;
 	color: white;
 	background-color: #363636;
 	border: 0;
+	border-radius: 8px;
 }
 
 .btn_login:hover {
-    background: red;
+    background: #BA0003;
+    transition: 0.5s;
 }
 
 .login_append {
 	overflow: hidden;
 	padding: 15px 0 0;
+	font-size: 18px;
 }
 
 .inp_chk {
@@ -180,7 +185,7 @@ fieldset, img {
 	display: inline-block;
 	margin-right: 19px;
 	color: white;
-	font-size: 14px;
+	font-size: 18px;
 	line-height: 19px;
 	vertical-align: top;
 }
@@ -206,12 +211,19 @@ fieldset, img {
 }
 </style>
 <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="https://github.com/notlelis/img-url/blob/main/favicon1.png?raw=true">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+<title>NORAJO</title>
 </head>
 <body>
     <!-- header -->
     <div id = "header">
         <!-- 로고 이미지 안나옴 -->
-        <a href="main_page_url" title="메인 페이지로 돌아가기">
+        <a href="http://localhost:8080/hikari_web/deuxieme_" title="메인 페이지로 돌아가기">
             <img class="logo" src="https://github.com/chaelynn1028/PCWK_MARKDOWN/blob/main/logowhite.png?raw=true" alt="logo">
         </a>
     </div>
@@ -239,6 +251,8 @@ fieldset, img {
 </form:form>
 
 					<button type="submit" class="btn_login">LOG IN</button>
+					
+			
 					
 					<div class="login_append">
 					<!-- Sign up -->
